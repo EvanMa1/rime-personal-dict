@@ -1,0 +1,12 @@
+# 专业词库 + 拼音纠错。合并到现有 wanxiang.custom.yaml 的 patch 下。
+# 另外复制 lua/personal_word_filter.lua 和 custom/typing_corrections.tsv，
+# 并将 custom_phrase.example.txt 的条目合并到用户目录的 custom_phrase.txt。
+patch:
+  "translator/packs/+":
+    - radar_statistics
+  "engine/filters/+":
+    - lua_filter@*personal_word_filter
+  personal_word_filter:
+    rules_file: custom/typing_corrections.tsv
+  # 排除“兺”的非普通话音节，让 bun 可以按 bu + n 解析。
+  "speller/algebra/@before 0": "erase/^būn$/"

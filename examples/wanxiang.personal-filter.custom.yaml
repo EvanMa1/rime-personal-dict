@@ -1,0 +1,13 @@
+# 专业词库 + 拼音纠错 + 严格的个人候选过滤。
+# 使用前阅读 custom/word_filter_README.md，再合并到原有 patch 下。
+# 另外复制 lua/personal_word_filter.lua、custom/blocked_words.txt 和
+# custom/blocked_word_rules.tsv，并合并 custom_phrase.example.txt 的条目。
+patch:
+  "translator/packs/+":
+    - radar_statistics
+  "engine/filters/+":
+    - lua_filter@*personal_word_filter
+  personal_word_filter:
+    word_file: custom/blocked_words.txt
+    rules_file: custom/blocked_word_rules.tsv
+  "speller/algebra/@before 0": "erase/^būn$/"

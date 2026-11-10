@@ -1,0 +1,24 @@
+# Rime runtime, learned data, and generated files
+build/
+sync/
+*.userdb*
+*.table.bin
+*.prism.bin
+*.reverse.bin
+*.gram
+*.log
+*.log.*
+/installation.yaml
+/user.yaml
+/default.custom.yaml
+/weasel.custom.yaml
+/wanxiang.custom.yaml
+/custom_phrase.txt
+
+# Local development artifacts
+__pycache__/
+*.py[cod]
+.venv/
+*.bak
+.DS_Store
+Thumbs.db

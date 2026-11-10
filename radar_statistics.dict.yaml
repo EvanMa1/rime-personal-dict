@@ -1,0 +1,724 @@
+# Rime dictionary
+# encoding: utf-8
+# 雷达信号处理与统计学：个人维护的专业词库。
+# 每行三列，以真实 Tab 分隔：词条、带声调拼音、词频。
+# 维护说明：custom/radar_statistics/README.md
+# 校验命令：python tools/check_radar_dictionary.py
+---
+name: radar_statistics
+version: "2026.11.10.1"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+# [radar_systems] 雷达基础与体制
+雷达信号处理	léi dá xìn hào chǔ lǐ	200
+统计信号处理	tǒng jì xìn hào chǔ lǐ	200
+雷达系统	léi dá xì tǒng	100
+雷达体制	léi dá tǐ zhì	100
+脉冲雷达	mài chōng léi dá	100
+连续波雷达	lián xù bō léi dá	100
+调频连续波雷达	tiáo pín lián xù bō léi dá	200
+脉冲多普勒雷达	mài chōng duō pǔ lè léi dá	200
+单脉冲雷达	dān mài chōng léi dá	100
+相控阵雷达	xiàng kòng zhèn léi dá	200
+有源相控阵雷达	yǒu yuán xiàng kòng zhèn léi dá	100
+无源相控阵雷达	wú yuán xiàng kòng zhèn léi dá	100
+数字阵列雷达	shù zì zhèn liè léi dá	100
+多输入多输出雷达	duō shū rù duō shū chū léi dá	100
+分布式雷达	fēn bù shì léi dá	100
+组网雷达	zǔ wǎng léi dá	100
+单基地雷达	dān jī dì léi dá	100
+双基地雷达	shuāng jī dì léi dá	100
+多基地雷达	duō jī dì léi dá	100
+无源雷达	wú yuán léi dá	100
+被动雷达	bèi dòng léi dá	100
+机载雷达	jī zài léi dá	100
+星载雷达	xīng zài léi dá	100
+车载雷达	chē zài léi dá	100
+毫米波雷达	háo mǐ bō léi dá	100
+超视距雷达	chāo shì jù léi dá	100
+频率捷变雷达	pín lǜ jié biàn léi dá	100
+低截获概率雷达	dī jié huò gài lǜ léi dá	100
+认知雷达	rèn zhī léi dá	100
+极化雷达	jí huà léi dá	100
+雷达方程	léi dá fāng chéng	200
+雷达散射截面	léi dá sǎn shè jié miàn	200
+目标散射特性	mù biāo sǎn shè tè xìng	100
+距离分辨率	jù lí fēn biàn lǜ	200
+速度分辨率	sù dù fēn biàn lǜ	200
+角分辨率	jiǎo fēn biàn lǜ	100
+距离模糊	jù lí mó hú	100
+速度模糊	sù dù mó hú	100
+模糊数	mó hú shù	80
+最大不模糊距离	zuì dà bù mó hú jù lí	100
+最大不模糊速度	zuì dà bù mó hú sù dù	100
+盲速	máng sù	80
+天线方向图	tiān xiàn fāng xiàng tú	100
+波束宽度	bō shù kuān dù	100
+主瓣宽度	zhǔ bàn kuān dù	100
+旁瓣电平	páng bàn diàn píng	100
+
+# [waveforms] 波形、脉冲压缩与距离多普勒处理
+雷达波形	léi dá bō xíng	100
+波形设计	bō xíng shè jì	100
+波形优化	bō xíng yōu huà	100
+线性调频	xiàn xìng tiáo pín	200
+非线性调频	fēi xiàn xìng tiáo pín	100
+线性调频信号	xiàn xìng tiáo pín xìn hào	200
+调频斜率	tiáo pín xié lǜ	100
+调频带宽	tiáo pín dài kuān	100
+调相编码	tiáo xiàng biān mǎ	100
+相位编码	xiàng wèi biān mǎ	100
+二相编码	èr xiàng biān mǎ	100
+多相编码	duō xiàng biān mǎ	100
+巴克码	bā kè mǎ	100
+互补码	hù bǔ mǎ	100
+步进频率	bù jìn pín lǜ	100
+频率步进信号	pín lǜ bù jìn xìn hào	100
+正交波形	zhèng jiāo bō xíng	100
+恒模波形	héng mó bō xíng	100
+脉冲宽度	mài chōng kuān dù	100
+脉冲重复频率	mài chōng chóng fù pín lǜ	200
+脉冲重复周期	mài chōng chóng fù zhōu qī	100
+脉冲重复间隔	mài chōng chóng fù jiàn gé	100
+脉冲串	mài chōng chuàn	100
+脉间调制	mài jiān tiáo zhì	100
+脉内调制	mài nèi tiáo zhì	100
+时宽带宽积	shí kuān dài kuān jī	100
+脉冲压缩	mài chōng yā suō	200
+脉冲压缩增益	mài chōng yā suō zēng yì	100
+匹配滤波	pǐ pèi lǜ bō	200
+匹配滤波器	pǐ pèi lǜ bō qì	200
+失配滤波	shī pèi lǜ bō	100
+失配损失	shī pèi sǔn shī	100
+距离旁瓣	jù lí páng bàn	100
+峰值旁瓣比	fēng zhí páng bàn bǐ	100
+积分旁瓣比	jī fēn páng bàn bǐ	100
+模糊函数	mó hú hán shù	200
+模糊图	mó hú tú	100
+交叉模糊函数	jiāo chā mó hú hán shù	100
+距离多普勒耦合	jù lí duō pǔ lè ǒu hé	100
+多普勒频移	duō pǔ lè pín yí	200
+多普勒容限	duō pǔ lè róng xiàn	100
+多普勒补偿	duō pǔ lè bǔ cháng	100
+微多普勒	wēi duō pǔ lè	200
+微动特征	wēi dòng tè zhēng	100
+相干积累	xiāng gān jī lěi	200
+非相干积累	fēi xiāng gān jī lěi	200
+相干处理间隔	xiāng gān chǔ lǐ jiàn gé	100
+积累增益	jī lěi zēng yì	100
+积累损失	jī lěi sǔn shī	100
+距离多普勒处理	jù lí duō pǔ lè chǔ lǐ	200
+距离多普勒图	jù lí duō pǔ lè tú	200
+距离速度图	jù lí sù dù tú	100
+距离单元	jù lí dān yuán	100
+多普勒单元	duō pǔ lè dān yuán	100
+快时间	kuài shí jiān	100
+慢时间	màn shí jiān	100
+解线性调频	jiě xiàn xìng tiáo pín	100
+去斜处理	qù xié chǔ lǐ	100
+差拍频率	chā pāi pín lǜ	100
+
+# [detection_clutter] 检测、恒虚警与杂波
+雷达目标检测	léi dá mù biāo jiǎn cè	200
+目标检测	mù biāo jiǎn cè	100
+弱目标检测	ruò mù biāo jiǎn cè	100
+扩展目标检测	kuò zhǎn mù biāo jiǎn cè	100
+检测前跟踪	jiǎn cè qián gēn zōng	100
+检测概率	jiǎn cè gài lǜ	200
+虚警概率	xū jǐng gài lǜ	200
+虚警率	xū jǐng lǜ	200
+漏检概率	lòu jiǎn gài lǜ	100
+检测门限	jiǎn cè mén xiàn	200
+检测阈值	jiǎn cè yù zhí	200
+自适应门限	zì shì yìng mén xiàn	100
+恒虚警	héng xū jǐng	200
+恒虚警检测	héng xū jǐng jiǎn cè	200
+恒虚警率	héng xū jǐng lǜ	200
+单元平均恒虚警	dān yuán píng jūn héng xū jǐng	100
+单元平均恒虚警检测	dān yuán píng jūn héng xū jǐng jiǎn cè	100
+最大选择恒虚警	zuì dà xuǎn zé héng xū jǐng	100
+最小选择恒虚警	zuì xiǎo xuǎn zé héng xū jǐng	100
+有序统计恒虚警	yǒu xù tǒng jì héng xū jǐng	100
+有序统计恒虚警检测	yǒu xù tǒng jì héng xū jǐng jiǎn cè	100
+二维恒虚警检测	èr wéi héng xū jǐng jiǎn cè	100
+待检测单元	dài jiǎn cè dān yuán	100
+参考单元	cān kǎo dān yuán	100
+保护单元	bǎo hù dān yuán	100
+滑动参考窗	huá dòng cān kǎo chuāng	100
+门限因子	mén xiàn yīn zǐ	100
+恒虚警损失	héng xū jǐng sǔn shī	100
+目标遮蔽	mù biāo zhē bì	100
+杂波边缘	zá bō biān yuán	100
+杂波抑制	zá bō yì zhì	200
+杂波建模	zá bō jiàn mó	100
+地杂波	dì zá bō	100
+海杂波	hǎi zá bō	200
+气象杂波	qì xiàng zá bō	100
+杂波谱	zá bō pǔ	100
+杂波图	zá bō tú	100
+杂波脊	zá bō jǐ	100
+杂波子空间	zá bō zǐ kōng jiān	100
+杂波协方差矩阵	zá bō xié fāng chā jǔ zhèn	200
+杂波非均匀性	zá bō fēi jūn yún xìng	100
+复合高斯杂波	fù hé gāo sī zá bō	100
+纹理分量	wén lǐ fēn liàng	100
+散斑分量	sǎn bān fēn liàng	100
+动目标显示	dòng mù biāo xiǎn shì	200
+动目标检测	dòng mù biāo jiǎn cè	200
+对消器	duì xiāo qì	100
+延迟线对消器	yán chí xiàn duì xiāo qì	100
+杂波改善因子	zá bō gǎi shàn yīn zǐ	100
+信噪比	xìn zào bǐ	200
+信杂比	xìn zá bǐ	200
+信杂噪比	xìn zá zào bǐ	200
+杂噪比	zá zào bǐ	100
+干噪比	gān zào bǐ	100
+输出信噪比	shū chū xìn zào bǐ	100
+接收机工作特性曲线	jiē shōu jī gōng zuò tè xìng qū xiàn	100
+斯沃林模型	sī wò lín mó xíng	100
+起伏目标	qǐ fú mù biāo	100
+非起伏目标	fēi qǐ fú mù biāo	100
+
+# [array_processing] 阵列、测向与空时处理
+阵列信号处理	zhèn liè xìn hào chǔ lǐ	200
+阵列流形	zhèn liè liú xíng	100
+阵列孔径	zhèn liè kǒng jìng	100
+均匀线阵	jūn yún xiàn zhèn	100
+均匀面阵	jūn yún miàn zhèn	100
+均匀圆阵	jūn yún yuán zhèn	100
+稀疏阵列	xī shū zhèn liè	100
+嵌套阵列	qiàn tào zhèn liè	100
+互质阵列	hù zhì zhèn liè	100
+虚拟阵列	xū nǐ zhèn liè	100
+阵元间距	zhèn yuán jiān jù	100
+阵列校准	zhèn liè jiào zhǔn	100
+阵元互耦	zhèn yuán hù ǒu	100
+幅相误差	fú xiàng wù chā	100
+导向矢量	dǎo xiàng shǐ liàng	200
+导向向量	dǎo xiàng xiàng liàng	100
+波束形成	bō shù xíng chéng	200
+数字波束形成	shù zì bō shù xíng chéng	200
+自适应波束形成	zì shì yìng bō shù xíng chéng	200
+稳健波束形成	wěn jiàn bō shù xíng chéng	100
+常规波束形成	cháng guī bō shù xíng chéng	100
+最小方差无失真响应	zuì xiǎo fāng chā wú shī zhēn xiǎng yìng	100
+线性约束最小方差	xiàn xìng yuē shù zuì xiǎo fāng chā	100
+广义旁瓣相消器	guǎng yì páng bàn xiāng xiāo qì	100
+旁瓣对消	páng bàn duì xiāo	100
+旁瓣匿影	páng bàn nì yǐng	100
+零陷形成	líng xiàn xíng chéng	100
+波达方向	bō dá fāng xiàng	200
+波达方向估计	bō dá fāng xiàng gū jì	200
+到达角估计	dào dá jiǎo gū jì	100
+空间谱估计	kōng jiān pǔ gū jì	200
+多重信号分类	duō chóng xìn hào fēn lèi	100
+旋转不变子空间	xuán zhuǎn bù biàn zǐ kōng jiān	100
+旋转不变子空间技术	xuán zhuǎn bù biàn zǐ kōng jiān jì shù	100
+相干信源	xiāng gān xìn yuán	100
+空间平滑	kōng jiān píng huá	100
+前后向平滑	qián hòu xiàng píng huá	100
+空时自适应处理	kōng shí zì shì yìng chǔ lǐ	200
+空时二维处理	kōng shí èr wéi chǔ lǐ	100
+空时导向矢量	kōng shí dǎo xiàng shǐ liàng	100
+空时协方差矩阵	kōng shí xié fāng chā jǔ zhèn	100
+空时快拍	kōng shí kuài pāi	100
+样本矩阵求逆	yàng běn jǔ zhèn qiú nì	100
+对角加载	duì jiǎo jiā zài	200
+降秩处理	jiàng zhì chǔ lǐ	100
+降维处理	jiàng wéi chǔ lǐ	100
+知识辅助处理	zhī shí fǔ zhù chǔ lǐ	100
+
+# [radar_imaging] 雷达成像与运动补偿
+雷达成像	léi dá chéng xiàng	200
+合成孔径雷达	hé chéng kǒng jìng léi dá	200
+逆合成孔径雷达	nì hé chéng kǒng jìng léi dá	200
+干涉合成孔径雷达	gān shè hé chéng kǒng jìng léi dá	100
+极化合成孔径雷达	jí huà hé chéng kǒng jìng léi dá	100
+聚束模式	jù shù mó shì	100
+条带模式	tiáo dài mó shì	100
+滑动聚束	huá dòng jù shù	100
+距离向	jù lí xiàng	100
+方位向	fāng wèi xiàng	100
+距离历程	jù lí lì chéng	100
+距离徙动	jù lí xǐ dòng	200
+距离徙动校正	jù lí xǐ dòng jiào zhèng	200
+距离走动	jù lí zǒu dòng	100
+距离弯曲	jù lí wān qū	100
+越距离单元走动	yuè jù lí dān yuán zǒu dòng	100
+多普勒中心	duō pǔ lè zhōng xīn	100
+多普勒调频率	duō pǔ lè tiáo pín lǜ	100
+方位压缩	fāng wèi yā suō	100
+二次距离压缩	èr cì jù lí yā suō	100
+距离多普勒算法	jù lí duō pǔ lè suàn fǎ	200
+调频缩放算法	tiáo pín suō fàng suàn fǎ	100
+后向投影算法	hòu xiàng tóu yǐng suàn fǎ	100
+距离迁移算法	jù lí qiān yí suàn fǎ	100
+距离徙动算法	jù lí xǐ dòng suàn fǎ	100
+极坐标格式算法	jí zuò biāo gé shì suàn fǎ	100
+基石变换	jī shí biàn huàn	100
+楔石变换	xiē shí biàn huàn	100
+运动补偿	yùn dòng bǔ cháng	200
+平动补偿	píng dòng bǔ cháng	100
+转动补偿	zhuǎn dòng bǔ cháng	100
+包络对齐	bāo luò duì qí	100
+相位校正	xiàng wèi jiào zhèng	100
+相位梯度自聚焦	xiàng wèi tī dù zì jù jiāo	100
+最小熵自聚焦	zuì xiǎo shāng zì jù jiāo	100
+图像聚焦	tú xiàng jù jiāo	100
+散射中心	sǎn shè zhōng xīn	100
+高分辨距离像	gāo fēn biàn jù lí xiàng	200
+距离像	jù lí xiàng	100
+雷达图像配准	léi dá tú xiàng pèi zhǔn	100
+相位解缠	xiàng wèi jiě chán	100
+散斑噪声	sǎn bān zào shēng	100
+自动目标识别	zì dòng mù biāo shí bié	100
+
+# [tracking] 目标跟踪与状态估计
+目标跟踪	mù biāo gēn zōng	200
+多目标跟踪	duō mù biāo gēn zōng	200
+航迹起始	háng jì qǐ shǐ	100
+航迹关联	háng jì guān lián	100
+航迹管理	háng jì guǎn lǐ	100
+航迹融合	háng jì róng hé	100
+航迹终止	háng jì zhōng zhǐ	100
+点迹凝聚	diǎn jì níng jù	100
+数据关联	shù jù guān lián	200
+最近邻关联	zuì jìn lín guān lián	100
+全局最近邻	quán jú zuì jìn lín	100
+概率数据关联	gài lǜ shù jù guān lián	100
+联合概率数据关联	lián hé gài lǜ shù jù guān lián	100
+多假设跟踪	duō jiǎ shè gēn zōng	100
+椭圆跟踪门	tuǒ yuán gēn zōng mén	100
+马氏距离	mǎ shì jù lí	100
+状态估计	zhuàng tài gū jì	200
+状态空间模型	zhuàng tài kōng jiān mó xíng	200
+状态转移矩阵	zhuàng tài zhuǎn yí jǔ zhèn	100
+观测矩阵	guān cè jǔ zhèn	100
+过程噪声	guò chéng zào shēng	100
+量测噪声	liáng cè zào shēng	100
+新息协方差	xīn xī xié fāng chā	100
+卡尔曼滤波	kǎ ěr màn lǜ bō	200
+扩展卡尔曼滤波	kuò zhǎn kǎ ěr màn lǜ bō	200
+无迹卡尔曼滤波	wú jì kǎ ěr màn lǜ bō	200
+容积卡尔曼滤波	róng jī kǎ ěr màn lǜ bō	100
+平方根滤波	píng fāng gēn lǜ bō	100
+信息滤波	xìn xī lǜ bō	100
+粒子滤波	lì zǐ lǜ bō	200
+序贯蒙特卡洛	xù guàn méng tè kǎ luò	100
+重要性采样	zhòng yào xìng cǎi yàng	100
+重采样	chóng cǎi yàng	100
+粒子退化	lì zǐ tuì huà	100
+交互多模型	jiāo hù duō mó xíng	100
+机动目标跟踪	jī dòng mù biāo gēn zōng	100
+匀速模型	yún sù mó xíng	100
+匀加速模型	yún jiā sù mó xíng	100
+协调转弯模型	xié tiáo zhuǎn wān mó xíng	100
+随机有限集	suí jī yǒu xiàn jí	100
+概率假设密度	gài lǜ jiǎ shè mì dù	100
+多伯努利滤波	duō bó nǔ lì lǜ bō	100
+
+# [dsp] 数字信号处理、频谱与时频分析
+数字信号处理	shù zì xìn hào chǔ lǐ	200
+离散时间信号	lí sàn shí jiān xìn hào	100
+连续时间信号	lián xù shí jiān xìn hào	100
+解析信号	jiě xī xìn hào	100
+复包络	fù bāo luò	100
+复基带信号	fù jī dài xìn hào	100
+正交解调	zhèng jiāo jiě tiáo	100
+数字下变频	shù zì xià biàn pín	100
+采样定理	cǎi yàng dìng lǐ	100
+采样频率	cǎi yàng pín lǜ	100
+欠采样	qiàn cǎi yàng	100
+过采样	guò cǎi yàng	100
+抗混叠滤波	kàng hùn dié lǜ bō	100
+频谱混叠	pín pǔ hùn dié	100
+频谱泄漏	pín pǔ xiè lòu	100
+栅栏效应	zhà lán xiào yìng	100
+频率分辨率	pín lǜ fēn biàn lǜ	100
+离散傅里叶变换	lí sàn fù lǐ yè biàn huàn	200
+快速傅里叶变换	kuài sù fù lǐ yè biàn huàn	200
+逆傅里叶变换	nì fù lǐ yè biàn huàn	100
+二维傅里叶变换	èr wéi fù lǐ yè biàn huàn	100
+短时傅里叶变换	duǎn shí fù lǐ yè biàn huàn	200
+分数阶傅里叶变换	fēn shù jiē fù lǐ yè biàn huàn	100
+希尔伯特变换	xī ěr bó tè biàn huàn	100
+小波变换	xiǎo bō biàn huàn	100
+连续小波变换	lián xù xiǎo bō biàn huàn	100
+离散小波变换	lí sàn xiǎo bō biàn huàn	100
+小波包分解	xiǎo bō bāo fēn jiě	100
+时频分析	shí pín fēn xī	200
+时频分布	shí pín fēn bù	100
+时频分辨率	shí pín fēn biàn lǜ	100
+维格纳分布	wéi gé nà fēn bù	100
+维格纳维尔分布	wéi gé nà wéi ěr fēn bù	100
+同步压缩变换	tóng bù yā suō biàn huàn	100
+经验模态分解	jīng yàn mó tài fēn jiě	100
+变分模态分解	biàn fēn mó tài fēn jiě	100
+谱估计	pǔ gū jì	200
+功率谱密度	gōng lǜ pǔ mì dù	200
+互功率谱密度	hù gōng lǜ pǔ mì dù	100
+周期图法	zhōu qī tú fǎ	100
+平均周期图	píng jūn zhōu qī tú	100
+参数谱估计	cān shù pǔ gū jì	100
+非参数谱估计	fēi cān shù pǔ gū jì	100
+自相关函数	zì xiāng guān hán shù	200
+互相关函数	hù xiāng guān hán shù	200
+循环相关	xún huán xiāng guān	100
+线性卷积	xiàn xìng juǎn jī	100
+循环卷积	xún huán juǎn jī	100
+去卷积	qù juǎn jī	100
+有限冲激响应	yǒu xiàn chōng jī xiǎng yìng	100
+无限冲激响应	wú xiàn chōng jī xiǎng yìng	100
+自适应滤波	zì shì yìng lǜ bō	200
+维纳滤波	wéi nà lǜ bō	100
+最小均方算法	zuì xiǎo jūn fāng suàn fǎ	100
+归一化最小均方	guī yī huà zuì xiǎo jūn fāng	100
+递归最小二乘	dì guī zuì xiǎo èr chéng	100
+汉宁窗	hàn níng chuāng	100
+汉明窗	hàn míng chuāng	100
+凯泽窗	kǎi zé chuāng	100
+泰勒窗	tài lè chuāng	100
+切比雪夫窗	qiè bǐ xuě fū chuāng	100
+布莱克曼窗	bù lái kè màn chuāng	100
+
+# [probability] 概率论与统计基础
+概率论	gài lǜ lùn	100
+数理统计	shù lǐ tǒng jì	200
+概率统计	gài lǜ tǒng jì	200
+统计推断	tǒng jì tuī duàn	200
+随机试验	suí jī shì yàn	100
+样本空间	yàng běn kōng jiān	100
+随机事件	suí jī shì jiàn	100
+条件概率	tiáo jiàn gài lǜ	200
+联合概率	lián hé gài lǜ	100
+边缘概率	biān yuán gài lǜ	100
+全概率公式	quán gài lǜ gōng shì	100
+贝叶斯公式	bèi yè sī gōng shì	200
+先验概率	xiān yàn gài lǜ	200
+后验概率	hòu yàn gài lǜ	200
+条件独立	tiáo jiàn dú lì	100
+相互独立	xiāng hù dú lì	100
+两两独立	liǎng liǎng dú lì	100
+随机变量	suí jī biàn liàng	200
+随机向量	suí jī xiàng liàng	100
+连续型随机变量	lián xù xíng suí jī biàn liàng	100
+离散型随机变量	lí sàn xíng suí jī biàn liàng	100
+概率密度函数	gài lǜ mì dù hán shù	200
+概率质量函数	gài lǜ zhì liàng hán shù	100
+累积分布函数	lěi jī fēn bù hán shù	200
+联合分布	lián hé fēn bù	100
+边缘分布	biān yuán fēn bù	100
+条件分布	tiáo jiàn fēn bù	100
+经验分布函数	jīng yàn fēn bù hán shù	100
+数学期望	shù xué qī wàng	200
+条件期望	tiáo jiàn qī wàng	100
+样本均值	yàng běn jūn zhí	100
+样本方差	yàng běn fāng chā	100
+总体方差	zǒng tǐ fāng chā	100
+标准差	biāo zhǔn chā	200
+标准误	biāo zhǔn wù	100
+标准误差	biāo zhǔn wù chā	100
+均方误差	jūn fāng wù chā	200
+均方根误差	jūn fāng gēn wù chā	200
+协方差	xié fāng chā	200
+协方差矩阵	xié fāng chā jǔ zhèn	200
+相关系数	xiāng guān xì shù	100
+相关矩阵	xiāng guān jǔ zhèn	100
+偏相关系数	piān xiāng guān xì shù	100
+高阶矩	gāo jiē jǔ	100
+中心矩	zhōng xīn jǔ	100
+原点矩	yuán diǎn jǔ	100
+偏度	piān dù	100
+峰度	fēng dù	100
+累积量	lěi jī liàng	100
+特征函数	tè zhēng hán shù	100
+矩母函数	jǔ mǔ hán shù	100
+分位数	fēn wèi shù	100
+中位数	zhōng wèi shù	100
+四分位距	sì fēn wèi jù	100
+大数定律	dà shù dìng lǜ	100
+中心极限定理	zhōng xīn jí xiàn dìng lǐ	200
+依概率收敛	yī gài lǜ shōu liǎn	100
+依分布收敛	yī fēn bù shōu liǎn	100
+几乎处处收敛	jī hū chù chù shōu liǎn	100
+均方收敛	jūn fāng shōu liǎn	100
+独立同分布	dú lì tóng fēn bù	200
+切比雪夫不等式	qiè bǐ xuě fū bù děng shì	100
+
+# [distributions] 常用分布与复随机变量
+伯努利分布	bó nǔ lì fēn bù	100
+二项分布	èr xiàng fēn bù	100
+多项分布	duō xiàng fēn bù	100
+泊松分布	pō sōng fēn bù	200
+几何分布	jǐ hé fēn bù	100
+负二项分布	fù èr xiàng fēn bù	100
+超几何分布	chāo jǐ hé fēn bù	100
+均匀分布	jūn yún fēn bù	100
+指数分布	zhǐ shù fēn bù	100
+正态分布	zhèng tài fēn bù	200
+高斯分布	gāo sī fēn bù	200
+标准正态分布	biāo zhǔn zhèng tài fēn bù	100
+多元正态分布	duō yuán zhèng tài fēn bù	100
+复高斯分布	fù gāo sī fēn bù	200
+圆对称复高斯分布	yuán duì chèn fù gāo sī fēn bù	100
+复高斯随机变量	fù gāo sī suí jī biàn liàng	100
+伪协方差矩阵	wěi xié fāng chā jǔ zhèn	100
+复合高斯分布	fù hé gāo sī fēn bù	100
+高斯混合分布	gāo sī hùn hé fēn bù	100
+截断高斯分布	jié duàn gāo sī fēn bù	100
+瑞利分布	ruì lì fēn bù	200
+莱斯分布	lái sī fēn bù	200
+威布尔分布	wēi bù ěr fēn bù	100
+对数正态分布	duì shù zhèng tài fēn bù	100
+伽马分布	gā mǎ fēn bù	100
+逆伽马分布	nì gā mǎ fēn bù	100
+贝塔分布	bèi tǎ fēn bù	100
+卡方分布	kǎ fāng fēn bù	200
+非中心卡方分布	fēi zhōng xīn kǎ fāng fēn bù	100
+柯西分布	kē xī fēn bù	100
+拉普拉斯分布	lā pǔ lā sī fēn bù	100
+威沙特分布	wēi shā tè fēn bù	100
+复威沙特分布	fù wēi shā tè fēn bù	100
+逆威沙特分布	nì wēi shā tè fēn bù	100
+狄利克雷分布	dí lì kè léi fēn bù	100
+混合分布	hùn hé fēn bù	100
+重尾分布	zhòng wěi fēn bù	100
+稳定分布	wěn dìng fēn bù	100
+极值分布	jí zhí fēn bù	100
+概率积分变换	gài lǜ jī fēn biàn huàn	100
+
+# [estimation] 参数估计与贝叶斯推断
+参数估计	cān shù gū jì	200
+点估计	diǎn gū jì	100
+区间估计	qū jiān gū jì	100
+矩估计	jǔ gū jì	100
+最大似然估计	zuì dà sì rán gū jì	200
+极大似然估计	jí dà sì rán gū jì	200
+最大后验估计	zuì dà hòu yàn gū jì	200
+贝叶斯估计	bèi yè sī gū jì	200
+最小均方误差估计	zuì xiǎo jūn fāng wù chā gū jì	200
+线性最小均方误差	xiàn xìng zuì xiǎo jūn fāng wù chā	100
+最小二乘估计	zuì xiǎo èr chéng gū jì	200
+加权最小二乘	jiā quán zuì xiǎo èr chéng	100
+广义最小二乘	guǎng yì zuì xiǎo èr chéng	100
+总体最小二乘	zǒng tǐ zuì xiǎo èr chéng	100
+非线性最小二乘	fēi xiàn xìng zuì xiǎo èr chéng	100
+似然函数	sì rán hán shù	200
+对数似然函数	duì shù sì rán hán shù	200
+负对数似然	fù duì shù sì rán	100
+似然比	sì rán bǐ	200
+对数似然比	duì shù sì rán bǐ	100
+充分统计量	chōng fèn tǒng jì liàng	100
+完备统计量	wán bèi tǒng jì liàng	100
+辅助统计量	fǔ zhù tǒng jì liàng	100
+无偏估计	wú piān gū jì	200
+有偏估计	yǒu piān gū jì	100
+一致估计	yī zhì gū jì	100
+有效估计	yǒu xiào gū jì	100
+渐近无偏	jiàn jìn wú piān	100
+渐近正态性	jiàn jìn zhèng tài xìng	100
+最小方差无偏估计	zuì xiǎo fāng chā wú piān gū jì	100
+最佳线性无偏估计	zuì jiā xiàn xìng wú piān gū jì	100
+费舍尔信息	fèi shě ěr xìn xī	200
+费舍尔信息矩阵	fèi shě ěr xìn xī jǔ zhèn	200
+克拉美罗下界	kè lā měi luó xià jiè	200
+克拉默拉奥下界	kè lā mò lā ào xià jiè	100
+贝叶斯克拉美罗下界	bèi yè sī kè lā měi luó xià jiè	100
+参数可辨识性	cān shù kě biàn shí xìng	100
+干扰参数	gān rǎo cān shù	100
+置信区间	zhì xìn qū jiān	200
+置信水平	zhì xìn shuǐ píng	100
+可信区间	kě xìn qū jiān	100
+先验分布	xiān yàn fēn bù	200
+后验分布	hòu yàn fēn bù	200
+共轭先验	gòng è xiān yàn	100
+无信息先验	wú xìn xī xiān yàn	100
+后验预测分布	hòu yàn yù cè fēn bù	100
+边缘似然	biān yuán sì rán	100
+贝叶斯因子	bèi yè sī yīn zǐ	100
+经验贝叶斯	jīng yàn bèi yè sī	100
+分层贝叶斯	fēn céng bèi yè sī	100
+期望最大化算法	qī wàng zuì dà huà suàn fǎ	100
+变分推断	biàn fēn tuī duàn	100
+变分贝叶斯	biàn fēn bèi yè sī	100
+马尔可夫链蒙特卡洛	mǎ ěr kě fū liàn méng tè kǎ luò	100
+吉布斯采样	jí bù sī cǎi yàng	100
+
+# [hypothesis_tests] 假设检验与统计检测
+假设检验	jiǎ shè jiǎn yàn	200
+二元假设检验	èr yuán jiǎ shè jiǎn yàn	100
+多元假设检验	duō yuán jiǎ shè jiǎn yàn	100
+原假设	yuán jiǎ shè	100
+零假设	líng jiǎ shè	100
+备择假设	bèi zé jiǎ shè	100
+简单假设	jiǎn dān jiǎ shè	100
+复合假设	fù hé jiǎ shè	100
+显著性水平	xiǎn zhù xìng shuǐ píng	200
+统计显著性	tǒng jì xiǎn zhù xìng	100
+检验统计量	jiǎn yàn tǒng jì liàng	200
+拒绝域	jù jué yù	100
+第一类错误	dì yī lèi cuò wù	100
+第二类错误	dì èr lèi cuò wù	100
+检验功效	jiǎn yàn gōng xiào	100
+统计功效	tǒng jì gōng xiào	100
+单侧检验	dān cè jiǎn yàn	100
+双侧检验	shuāng cè jiǎn yàn	100
+似然比检验	sì rán bǐ jiǎn yàn	200
+广义似然比检验	guǎng yì sì rán bǐ jiǎn yàn	200
+奈曼皮尔逊准则	nài màn pí ěr xùn zhǔn zé	100
+贝叶斯检测	bèi yè sī jiǎn cè	100
+最大后验检测	zuì dà hòu yàn jiǎn cè	100
+能量检测	néng liàng jiǎn cè	100
+相干检测	xiāng gān jiǎn cè	100
+非相干检测	fēi xiāng gān jiǎn cè	100
+序贯检测	xù guàn jiǎn cè	100
+序贯概率比检验	xù guàn gài lǜ bǐ jiǎn yàn	100
+自适应匹配滤波器	zì shì yìng pǐ pèi lǜ bō qì	100
+自适应相干估计器	zì shì yìng xiāng gān gū jì qì	100
+沃尔德检验	wò ěr dé jiǎn yàn	100
+得分检验	dé fēn jiǎn yàn	100
+卡方检验	kǎ fāng jiǎn yàn	100
+拟合优度检验	nǐ hé yōu dù jiǎn yàn	100
+正态性检验	zhèng tài xìng jiǎn yàn	100
+独立性检验	dú lì xìng jiǎn yàn	100
+非参数检验	fēi cān shù jiǎn yàn	100
+秩和检验	zhì hé jiǎn yàn	100
+符号检验	fú hào jiǎn yàn	100
+置换检验	zhì huàn jiǎn yàn	100
+多重检验	duō chóng jiǎn yàn	100
+错误发现率	cuò wù fā xiàn lǜ	100
+效应量	xiào yìng liàng	100
+
+# [random_processes] 随机过程与时间序列
+随机过程	suí jī guò chéng	200
+随机信号	suí jī xìn hào	100
+平稳随机过程	píng wěn suí jī guò chéng	100
+宽平稳过程	kuān píng wěn guò chéng	100
+严平稳过程	yán píng wěn guò chéng	100
+非平稳过程	fēi píng wěn guò chéng	100
+循环平稳过程	xún huán píng wěn guò chéng	100
+遍历性	biàn lì xìng	100
+均值遍历性	jūn zhí biàn lì xìng	100
+相关遍历性	xiāng guān biàn lì xìng	100
+高斯过程	gāo sī guò chéng	200
+马尔可夫过程	mǎ ěr kě fū guò chéng	100
+马尔可夫链	mǎ ěr kě fū liàn	100
+隐马尔可夫模型	yǐn mǎ ěr kě fū mó xíng	100
+泊松过程	pō sōng guò chéng	100
+维纳过程	wéi nà guò chéng	100
+布朗运动	bù lǎng yùn dòng	100
+随机游走	suí jī yóu zǒu	100
+白噪声	bái zào shēng	200
+高斯白噪声	gāo sī bái zào shēng	200
+加性高斯白噪声	jiā xìng gāo sī bái zào shēng	200
+有色噪声	yǒu sè zào shēng	100
+乘性噪声	chéng xìng zào shēng	100
+脉冲噪声	mài chōng zào shēng	100
+相关噪声	xiāng guān zào shēng	100
+噪声白化	zào shēng bái huà	100
+白化滤波	bái huà lǜ bō	100
+自协方差函数	zì xié fāng chā hán shù	100
+互协方差函数	hù xié fāng chā hán shù	100
+相关时间	xiāng guān shí jiān	100
+相干时间	xiāng gān shí jiān	100
+时间序列	shí jiān xù liè	200
+自回归模型	zì huí guī mó xíng	100
+滑动平均模型	huá dòng píng jūn mó xíng	100
+自回归滑动平均	zì huí guī huá dòng píng jūn	100
+差分自回归滑动平均	chā fēn zì huí guī huá dòng píng jūn	100
+自回归条件异方差	zì huí guī tiáo jiàn yì fāng chā	100
+偏自相关函数	piān zì xiāng guān hán shù	100
+单位根检验	dān wèi gēn jiǎn yàn	100
+变点检测	biàn diǎn jiǎn cè	100
+累计和检测	lěi jì hé jiǎn cè	100
+累积和检测	lěi jī hé jiǎn cè	100
+
+# [multivariate] 多元统计、回归与稳健方法
+多元统计分析	duō yuán tǒng jì fēn xī	200
+主成分分析	zhǔ chéng fèn fēn xī	200
+独立成分分析	dú lì chéng fèn fēn xī	100
+典型相关分析	diǎn xíng xiāng guān fēn xī	100
+因子分析	yīn zǐ fēn xī	100
+线性判别分析	xiàn xìng pàn bié fēn xī	100
+二次判别分析	èr cì pàn bié fēn xī	100
+线性回归	xiàn xìng huí guī	200
+多元线性回归	duō yuán xiàn xìng huí guī	100
+非线性回归	fēi xiàn xìng huí guī	100
+逻辑回归	luó jí huí guī	100
+广义线性模型	guǎng yì xiàn xìng mó xíng	100
+岭回归	lǐng huí guī	100
+稀疏回归	xī shū huí guī	100
+弹性网络回归	tán xìng wǎng luò huí guī	100
+正则化	zhèng zé huà	200
+正则化参数	zhèng zé huà cān shù	100
+过拟合	guò nǐ hé	100
+欠拟合	qiàn nǐ hé	100
+交叉验证	jiāo chā yàn zhèng	100
+留一法	liú yī fǎ	100
+自助法	zì zhù fǎ	100
+刀切法	dāo qiē fǎ	100
+残差分析	cán chā fēn xī	100
+异方差性	yì fāng chā xìng	100
+多重共线性	duō chóng gòng xiàn xìng	100
+方差分析	fāng chā fēn xī	100
+协方差分析	xié fāng chā fēn xī	100
+偏差方差分解	piān chā fāng chā fēn jiě	100
+模型选择	mó xíng xuǎn zé	100
+赤池信息准则	chì chí xìn xī zhǔn zé	100
+贝叶斯信息准则	bèi yè sī xìn xī zhǔn zé	100
+最小描述长度	zuì xiǎo miáo shù cháng dù	100
+核密度估计	hé mì dù gū jì	200
+非参数估计	fēi cān shù gū jì	100
+稳健统计	wěn jiàn tǒng jì	100
+稳健估计	wěn jiàn gū jì	100
+鲁棒估计	lǔ bàng gū jì	100
+离群值检测	lí qún zhí jiǎn cè	100
+异常值检测	yì cháng zhí jiǎn cè	100
+中位数绝对偏差	zhōng wèi shù jué duì piān chā	100
+协方差收缩估计	xié fāng chā shōu suō gū jì	100
+稳健协方差估计	wěn jiàn xié fāng chā gū jì	100
+
+# [linear_algebra_optimization] 矩阵方法、稀疏处理与优化
+特征值分解	tè zhēng zhí fēn jiě	200
+奇异值分解	qí yì zhí fēn jiě	200
+广义特征值	guǎng yì tè zhēng zhí	100
+正定矩阵	zhèng dìng jǔ zhèn	100
+半正定矩阵	bàn zhèng dìng jǔ zhèn	100
+厄米矩阵	è mǐ jǔ zhèn	100
+酉矩阵	yǒu jǔ zhèn	100
+共轭转置	gòng è zhuǎn zhì	100
+伪逆矩阵	wěi nì jǔ zhèn	100
+矩阵条件数	jǔ zhèn tiáo jiàn shù	100
+克罗内克积	kè luó nèi kè jī	100
+哈达玛积	hā dá mǎ jī	100
+托普利茨矩阵	tuō pǔ lì cí jǔ zhèn	100
+汉克尔矩阵	hàn kè ěr jǔ zhèn	100
+正交投影	zhèng jiāo tóu yǐng	100
+信号子空间	xìn hào zǐ kōng jiān	100
+噪声子空间	zào shēng zǐ kōng jiān	100
+子空间分解	zǐ kōng jiān fēn jiě	100
+低秩近似	dī zhì jìn sì	100
+低秩矩阵恢复	dī zhì jǔ zhèn huī fù	100
+稀疏表示	xī shū biǎo shì	100
+稀疏重构	xī shū chóng gòu	200
+压缩感知	yā suō gǎn zhī	200
+稀疏贝叶斯学习	xī shū bèi yè sī xué xí	100
+正交匹配追踪	zhèng jiāo pǐ pèi zhuī zōng	100
+凸优化	tū yōu huà	100
+非凸优化	fēi tū yōu huà	100
+半正定规划	bàn zhèng dìng guī huà	100
+二阶锥规划	èr jiē zhuī guī huà	100
+梯度下降	tī dù xià jiàng	100
+共轭梯度法	gòng è tī dù fǎ	100
+拉格朗日乘子	lā gé lǎng rì chéng zǐ	100
+交替方向乘子法	jiāo tì fāng xiàng chéng zǐ fǎ	100
+蒙特卡洛仿真	méng tè kǎ luò fǎng zhēn	200
+蒙特卡洛积分	méng tè kǎ luò jī fēn	100
+熵估计	shāng gū jì	100
+微分熵	wēi fēn shāng	100
+条件熵	tiáo jiàn shāng	100
+互信息	hù xìn xī	100
+相对熵	xiāng duì shāng	100
+交叉熵	jiāo chā shāng	100
