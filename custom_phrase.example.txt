@@ -1,8 +1,0 @@
-# 个人纠错短语示例。将需要的行合并到 Rime 用户目录的 custom_phrase.txt。
-# 格式：词语<Tab>输入编码<Tab>优先级。保留原文件中的其他短语。
-能不	nengb	50
-能不	neng'b	50
-能不	nengbu	50
-能不	neng'bu	50
-能不能	nengbun	50
-你能不能	ninengbun	50

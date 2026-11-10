@@ -1,5 +1,0 @@
-# 默认模板：只加载雷达信号处理与统计学专业词库。
-# 已有 wanxiang.custom.yaml 时，将下面的键合并到原有 patch 下。
-patch:
-  "translator/packs/+":
-    - radar_statistics

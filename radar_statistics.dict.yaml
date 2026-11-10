@@ -2,8 +2,7 @@
 # encoding: utf-8
 # 雷达信号处理与统计学：个人维护的专业词库。
 # 每行三列，以真实 Tab 分隔：词条、带声调拼音、词频。
-# 维护说明：custom/radar_statistics/README.md
-# 校验命令：python tools/check_radar_dictionary.py
+# 维护说明：README.md
 ---
 name: radar_statistics
 version: "2026.11.10.1"
