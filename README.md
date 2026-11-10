@@ -78,7 +78,7 @@ python tools/check_personal_files.py
 python tools/check_radar_dictionary.py --chars /path/to/rime/dicts/chars.dict.yaml
 ```
 
-GitHub Actions 在 Python 3.9 和 3.13 上执行默认检查；它不包含逐字字表校验或 Rime 实际部署。
+GitHub Actions 使用固定的 Ubuntu 22.04 环境，在 Python 3.9 和 3.13 上执行默认检查；它不包含逐字字表校验或 Rime 实际部署。
 
 建议先在 Git 仓库中增补词条、更新词库版本，校验后将改动文件同步到 Rime 用户文件夹，再重新部署、验证输入并提交。词库版本使用 `YYYY.MM.DD.N`，同日再次修改时递增最后一位。
 
