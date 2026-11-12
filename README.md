@@ -35,11 +35,12 @@
 patch:
   "translator/packs/+":
     - radar_statistics
-  "engine/filters/+":
-    - lua_filter@*personal_word_filter
+  "engine/filters/@before last": lua_filter@*personal_word_filter
   personal_word_filter:
     word_file: custom/blocked_words.txt
     rules_file: custom/blocked_word_rules.tsv
 ```
 
-已有相同配置项时合并内容，过滤器放在候选过滤列表末尾。修改名单或规则后重新部署，格式和例外用法见文件内注释。
+已有相同配置项时合并内容，保持去重器 `uniquifier` 为最后一个过滤器。若旧配置通过 `engine/filters/+` 追加了 `personal_word_filter`，先移除列表中的那一项，再使用上面的配置，以免重复执行或影响去重。
+
+修改名单或规则后重新部署，格式和例外用法见文件内注释。
