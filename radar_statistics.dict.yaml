@@ -5,12 +5,14 @@
 # 维护说明：README.md
 ---
 name: radar_statistics
-version: "2026.11.10.1"
+version: "2026.11.12.2"
 sort: by_weight
 use_preset_vocabulary: false
 ...
 
 # [radar_systems] 雷达基础与体制
+回波	huí bō	200
+非线性器件	fēi xiàn xìng qì jiàn	200
 雷达信号处理	léi dá xìn hào chǔ lǐ	200
 统计信号处理	tǒng jì xìn hào chǔ lǐ	200
 雷达系统	léi dá xì tǒng	100
@@ -59,6 +61,8 @@ use_preset_vocabulary: false
 旁瓣电平	páng bàn diàn píng	100
 
 # [waveforms] 波形、脉冲压缩与距离多普勒处理
+幅度	fú dù	200
+相位	xiàng wèi	200
 雷达波形	léi dá bō xíng	100
 波形设计	bō xíng shè jì	100
 波形优化	bō xíng yōu huà	100
@@ -120,6 +124,9 @@ use_preset_vocabulary: false
 差拍频率	chā pāi pín lǜ	100
 
 # [detection_clutter] 检测、恒虚警与杂波
+虚警	xū jǐng	200
+漏检	lòu jiǎn	200
+杂波	zá bō	200
 雷达目标检测	léi dá mù biāo jiǎn cè	200
 目标检测	mù biāo jiǎn cè	100
 弱目标检测	ruò mù biāo jiǎn cè	100

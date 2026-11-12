@@ -46,29 +46,63 @@ local function read_lines(filename, consume)
     log.error("personal_word_filter: cannot read " .. filename)
 end
 
+local function load_priority_dictionary(env, filename, abbreviations)
+    read_lines(filename, function(line)
+        local word, pinyin = line:match("^([^\t]+)\t([^\t]+)\t%d+$")
+        if not word or utf8.len(word) < 2 then return end
+        pinyin = pinyin:gsub(utf8.charpattern, plain_pinyin)
+        if pinyin:find("[^a-z ]") then return end
+        local syllables = {}
+        for syllable in pinyin:gmatch("%S+") do
+            table.insert(syllables, syllable)
+        end
+        local function add(code)
+            add_academic_word(env.academic_index, code, word)
+            local alternate = code:gsub("([nl])ve", "%1ue")
+            if alternate ~= code then
+                add_academic_word(env.academic_index, alternate, word)
+            end
+        end
+        add(table.concat(syllables))
+        -- Only the small, explicitly configured personal phrase dictionary
+        -- gets mixed full/initial codes. Academic abbreviations remain native.
+        if not abbreviations or #syllables > 6 then return end
+        local function expand(position, prefix)
+            if position > #syllables then add(prefix); return end
+            local syllable = syllables[position]
+            expand(position + 1, prefix .. syllable)
+            if #syllable > 1 then expand(position + 1, prefix .. syllable:sub(1, 1)) end
+            local initial = syllable:match("^[zcs]h")
+            if initial and #syllable > 2 then expand(position + 1, prefix .. initial) end
+        end
+        expand(1, "")
+    end)
+end
+
 function filter.init(env)
     env.blocked_words = {}
     env.rules = {}
     env.decisions = {}
     env.decision_count = 0
     env.academic_index = {}
+    env.fixed_codes = {}
     local config = env.engine.schema.config
-    local dictionaries = config:get_list("personal_word_filter/academic_dictionaries")
-    if dictionaries then
-        for i = 0, dictionaries.size - 1 do
-            local filename = dictionaries:get_value_at(i)
-            if filename then
-                read_lines(filename.value, function(line)
-                    local word, code = line:match("^([^\t]+)\t([^\t]+)\t%d+$")
-                    if not word or utf8.len(word) < 2 then return end
-                    code = code:gsub(utf8.charpattern, plain_pinyin):gsub("%s+", "")
-                    if code:find("[^a-z]") then return end
-                    add_academic_word(env.academic_index, code, word)
-                    local alternate = code:gsub("([nl])ve", "%1ue")
-                    if alternate ~= code then
-                        add_academic_word(env.academic_index, alternate, word)
-                    end
-                end)
+    local fixed_dictionary = config:get_string("custom_phrase/user_dict")
+    if fixed_dictionary and config:get_string("custom_phrase/db_class") == "stabledb" then
+        read_lines(fixed_dictionary .. ".txt", function(line)
+            local word, code = line:match("^([^\t]+)\t([^\t]+)\t")
+            if code then
+                env.fixed_codes[code] = env.fixed_codes[code] or {}
+                env.fixed_codes[code][word] = true
+            end
+        end)
+    end
+    for _, source in ipairs({{"academic_dictionaries", false}, {"preferred_dictionaries", true}}) do
+        local dictionaries = config:get_list("personal_word_filter/" .. source[1])
+        if dictionaries then
+            for i = 0, dictionaries.size - 1 do
+                local filename = dictionaries:get_value_at(i)
+                if filename then load_priority_dictionary(env, filename.value, source[2]) end
             end
         end
     end
@@ -151,14 +185,15 @@ local function academic_matches(env)
     local segment = context.composition:back()
     if not segment:has_tag("abc") then return end
     local code = context.input:sub(segment.start + 1, segment._end)
-    if code:find("[^a-z' ]") then return end
+    local fixed = env.fixed_codes[code]
+    if code:find("[^a-z' ]") then return nil, segment.start, segment._end, fixed end
     code = code:gsub("[' ]", "")
-    return env.academic_index[code], segment.start, segment._end
+    return env.academic_index[code], segment.start, segment._end, fixed
 end
 
 function filter.func(input, env)
-    local matches, start_pos, end_pos = academic_matches(env)
-    if not matches then
+    local matches, start_pos, end_pos, fixed_input = academic_matches(env)
+    if not matches and not fixed_input then
         for candidate in input:iter() do
             if not is_blocked(candidate.text, env) then yield(candidate) end
         end
@@ -167,7 +202,8 @@ function filter.func(input, env)
 
     local fixed, academic, ordinary = {}, {}, {}
     local found = {}
-    local remaining = matches.count
+    local remaining = matches and matches.count or 0
+    local fixed_found = not fixed_input
     local inspected = 0
     local flushed = false
     local function flush()
@@ -187,14 +223,17 @@ function filter.func(input, env)
             else
                 local text = candidate.text
                 if env.to_simplified then text = env.to_simplified:convert(text) or text end
-                local is_academic = matches.words[text]
+                local is_academic = matches and matches.words[text]
                     and candidate.start == start_pos and candidate._end == end_pos
                 if is_academic and not found[text] then
                     found[text] = true
                     remaining = remaining - 1
                 end
-                if candidate.type == "user_table" then
+                local is_fixed = candidate.type == "user_table" or (fixed_input
+                    and (fixed_input[candidate.text] or fixed_input[text]))
+                if is_fixed then
                     table.insert(fixed, candidate)
+                    fixed_found = true
                 elseif is_academic then
                     table.insert(academic, candidate)
                 else
@@ -203,7 +242,7 @@ function filter.func(input, env)
             end
         end
         -- Bound look-ahead; stop as soon as all exact academic matches are found.
-        if not flushed and (remaining == 0 or inspected >= 128) then flush() end
+        if not flushed and ((remaining == 0 and fixed_found) or inspected >= 128) then flush() end
     end
     if not flushed then flush() end
 end
@@ -214,6 +253,7 @@ function filter.fini(env)
     env.decisions = nil
     env.to_simplified = nil
     env.academic_index = nil
+    env.fixed_codes = nil
 end
 
 return filter
