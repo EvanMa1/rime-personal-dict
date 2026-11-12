@@ -5,7 +5,7 @@
 # 维护说明：README.md
 ---
 name: radar_statistics
-version: "2026.11.12.2"
+version: "2026.11.12.3"
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -400,6 +400,7 @@ use_preset_vocabulary: false
 条件概率	tiáo jiàn gài lǜ	200
 联合概率	lián hé gài lǜ	100
 边缘概率	biān yuán gài lǜ	100
+尾概率	wěi gài lǜ	200
 全概率公式	quán gài lǜ gōng shì	100
 贝叶斯公式	bèi yè sī gōng shì	200
 先验概率	xiān yàn gài lǜ	200

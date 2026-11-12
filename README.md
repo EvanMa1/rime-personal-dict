@@ -1,9 +1,9 @@
 # 学术词库（数学优先）
 
-面向万象拼音标准版的学术补充词库，共 **1,890 条词语、26 个分类**。
+面向万象拼音标准版的学术补充词库，共 **1,891 条词语、26 个分类**。
 
 - [academic_math.dict.yaml](academic_math.dict.yaml)：**1,199 条、12 类**，涵盖维度与环面、逻辑与集合、线性代数、微积分、实分析、拓扑、微分几何、代数与数论、复分析、图论、数值计算和学术写作。
-- [radar_statistics.dict.yaml](radar_statistics.dict.yaml)：**691 条、14 类**，涵盖雷达、信号处理、概率统计与优化。
+- [radar_statistics.dict.yaml](radar_statistics.dict.yaml)：**692 条、14 类**，涵盖雷达、信号处理、概率统计与优化。
 
 ## 使用
 
