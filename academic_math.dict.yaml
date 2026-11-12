@@ -1,0 +1,1235 @@
+# Rime dictionary
+# encoding: utf-8
+# 数学与学术写作词库，按数学分支维护。
+# 每行三列，以真实 Tab 分隔：词条、带声调拼音、词频。
+# 使用说明：README.md
+---
+name: academic_math
+version: "2026.11.12.1"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+
+# [dimensions] 维度、空间与环面
+零维	líng wéi	1000
+一维	yī wéi	1000
+二维	èr wéi	1000
+三维	sān wéi	1000
+四维	sì wéi	1000
+五维	wǔ wéi	500
+六维	liù wéi	500
+七维	qī wéi	500
+八维	bā wéi	500
+九维	jiǔ wéi	500
+十维	shí wéi	500
+低维	dī wéi	1000
+高维	gāo wéi	1000
+多维	duō wéi	1000
+有限维	yǒu xiàn wéi	1000
+无限维	wú xiàn wéi	1000
+维数	wéi shù	1000
+维度	wéi dù	1000
+余维	yú wéi	500
+一维空间	yī wéi kōng jiān	500
+二维空间	èr wéi kōng jiān	500
+三维空间	sān wéi kōng jiān	500
+四维空间	sì wéi kōng jiān	500
+高维空间	gāo wéi kōng jiān	500
+低维空间	dī wéi kōng jiān	500
+多维空间	duō wéi kōng jiān	500
+有限维空间	yǒu xiàn wéi kōng jiān	500
+无限维空间	wú xiàn wéi kōng jiān	500
+一维向量空间	yī wéi xiàng liàng kōng jiān	500
+二维向量空间	èr wéi xiàng liàng kōng jiān	500
+三维向量空间	sān wéi xiàng liàng kōng jiān	500
+有限维向量空间	yǒu xiàn wéi xiàng liàng kōng jiān	500
+无限维向量空间	wú xiàn wéi xiàng liàng kōng jiān	500
+一维流形	yī wéi liú xíng	500
+二维流形	èr wéi liú xíng	500
+三维流形	sān wéi liú xíng	500
+四维流形	sì wéi liú xíng	500
+高维流形	gāo wéi liú xíng	500
+环面	huán miàn	1000
+一维环面	yī wéi huán miàn	1000
+二维环面	èr wéi huán miàn	1000
+三维环面	sān wéi huán miàn	1000
+高维环面	gāo wéi huán miàn	500
+平坦环面	píng tǎn huán miàn	500
+复环面	fù huán miàn	500
+环面映射	huán miàn yìng shè	500
+球面	qiú miàn	1000
+一维球面	yī wéi qiú miàn	500
+二维球面	èr wéi qiú miàn	500
+三维球面	sān wéi qiú miàn	500
+高维球面	gāo wéi qiú miàn	500
+单位球面	dān wèi qiú miàn	500
+单位球	dān wèi qiú	500
+开球	kāi qiú	500
+闭球	bì qiú	500
+球壳	qiú ké	500
+超球面	chāo qiú miàn	500
+超平面	chāo píng miàn	500
+欧氏空间	ōu shì kōng jiān	500
+欧几里得空间	ōu jǐ lǐ dé kōng jiān	500
+非欧几何	fēi ōu jǐ hé	500
+笛卡尔坐标系	dí kǎ ěr zuò biāo xì	500
+笛卡尔积	dí kǎ ěr jī	500
+极坐标	jí zuò biāo	500
+柱坐标	zhù zuò biāo	500
+球坐标	qiú zuò biāo	500
+参数空间	cān shù kōng jiān	500
+状态空间	zhuàng tài kōng jiān	500
+相空间	xiàng kōng jiān	500
+相平面	xiàng píng miàn	500
+相轨迹	xiàng guǐ jì	500
+一维的	yī wéi de	500
+二维的	èr wéi de	500
+三维的	sān wéi de	500
+高维的	gāo wéi de	500
+有限维的	yǒu xiàn wéi de	500
+无限维的	wú xiàn wéi de	500
+
+# [mathematical_logic] 数学语言、集合与逻辑
+数学	shù xué	1000
+纯数学	chún shù xué	500
+应用数学	yìng yòng shù xué	500
+数学分析	shù xué fēn xī	500
+高等代数	gāo děng dài shù	500
+解析几何	jiě xī jǐ hé	500
+离散数学	lí sàn shù xué	500
+数理逻辑	shù lǐ luó jí	500
+集合论	jí hé lùn	500
+公理	gōng lǐ	1000
+公理系统	gōng lǐ xì tǒng	500
+定义	dìng yì	1000
+定理	dìng lǐ	1000
+引理	yǐn lǐ	1000
+推论	tuī lùn	1000
+命题	mìng tí	1000
+证明	zhèng míng	1000
+证毕	zhèng bì	500
+证伪	zhèng wěi	500
+反例	fǎn lì	500
+反证法	fǎn zhèng fǎ	500
+归谬法	guī miù fǎ	500
+数学归纳法	shù xué guī nà fǎ	500
+强归纳法	qiáng guī nà fǎ	500
+归纳假设	guī nà jiǎ shè	500
+归纳步骤	guī nà bù zhòu	500
+构造性证明	gòu zào xìng zhèng míng	500
+存在性证明	cún zài xìng zhèng míng	500
+唯一性证明	wéi yī xìng zhèng míng	500
+充分条件	chōng fèn tiáo jiàn	500
+必要条件	bì yào tiáo jiàn	500
+充要条件	chōng yào tiáo jiàn	500
+当且仅当	dāng qiě jǐn dāng	500
+不妨设	bù fáng shè	500
+不失一般性	bù shī yì bān xìng	500
+记为	jì wéi	500
+任意元素	rèn yì yuán sù	500
+存在唯一	cún zài wéi yī	500
+等价关系	děng jià guān xì	500
+等价类	děng jià lèi	500
+等价命题	děng jià mìng tí	500
+逻辑等价	luó jí děng jià	500
+蕴含关系	yùn hán guān xì	500
+逻辑蕴含	luó jí yùn hán	500
+合取	hé qǔ	500
+析取	xī qǔ	500
+否定	fǒu dìng	500
+全称量词	quán chēng liàng cí	500
+存在量词	cún zài liàng cí	500
+量词	liàng cí	500
+谓词	wèi cí	500
+谓词逻辑	wèi cí luó jí	500
+命题逻辑	mìng tí luó jí	500
+重言式	chóng yán shì	500
+矛盾式	máo dùn shì	500
+可满足性	kě mǎn zú xìng	500
+集合	jí hé	1000
+子集	zǐ jí	500
+真子集	zhēn zǐ jí	500
+空集	kōng jí	500
+全集	quán jí	500
+幂集	mì jí	500
+并集	bìng jí	500
+交集	jiāo jí	500
+差集	chā jí	500
+补集	bǔ jí	500
+对称差	duì chèn chà	500
+集合族	jí hé zú	500
+指标集	zhǐ biāo jí	500
+有序对	yǒu xù duì	500
+有序组	yǒu xù zǔ	500
+有限集	yǒu xiàn jí	500
+无限集	wú xiàn jí	500
+可数集	kě shǔ jí	500
+不可数集	bù kě shǔ jí	500
+可数无穷	kě shǔ wú qióng	500
+不可数无穷	bù kě shǔ wú qióng	500
+可数性	kě shǔ xìng	500
+可数	kě shǔ	1000
+不可数	bù kě shǔ	1000
+等价	děng jià	1000
+基数	jī shù	500
+序数	xù shù	500
+选择公理	xuǎn zé gōng lǐ	500
+良序定理	liáng xù dìng lǐ	500
+佐恩引理	zuǒ ēn yǐn lǐ	500
+连续统	lián xù tǒng	500
+连续统假设	lián xù tǒng jiǎ shè	500
+映射	yìng shè	1000
+函数	hán shù	1000
+定义域	dìng yì yù	500
+值域	zhí yù	500
+陪域	péi yù	500
+原像	yuán xiàng	500
+像集	xiàng jí	500
+单射	dān shè	1000
+满射	mǎn shè	1000
+双射	shuāng shè	1000
+复合映射	fù hé yìng shè	500
+恒等映射	héng děng yìng shè	500
+逆映射	nì yìng shè	500
+关系	guān xì	500
+二元关系	èr yuán guān xì	500
+自反性	zì fǎn xìng	500
+对称性	duì chèn xìng	500
+反对称性	fǎn duì chèn xìng	500
+传递性	chuán dì xìng	500
+偏序	piān xù	500
+全序	quán xù	500
+偏序集	piān xù jí	500
+全序集	quán xù jí	500
+良序集	liáng xù jí	500
+上界	shàng jiè	500
+下界	xià jiè	500
+上确界	shàng què jiè	500
+下确界	xià què jiè	500
+最大元	zuì dà yuán	500
+最小元	zuì xiǎo yuán	500
+极大元	jí dà yuán	500
+极小元	jí xiǎo yuán	500
+
+# [linear_algebra] 线性代数、矩阵与张量
+线性代数	xiàn xìng dài shù	1000
+线性	xiàn xìng	1000
+非线性	fēi xiàn xìng	1000
+正交	zhèng jiāo	1000
+正定	zhèng dìng	1000
+半正定	bàn zhèng dìng	1000
+负定	fù dìng	500
+半负定	bàn fù dìng	500
+可逆	kě nì	1000
+不可逆	bù kě nì	500
+奇异	qí yì	1000
+非奇异	fēi qí yì	500
+向量	xiàng liàng	1000
+标量	biāo liàng	1000
+矩阵	jǔ zhèn	1000
+张量	zhāng liàng	1000
+线性空间	xiàn xìng kōng jiān	500
+向量空间	xiàng liàng kōng jiān	500
+子空间	zǐ kōng jiān	500
+线性子空间	xiàn xìng zǐ kōng jiān	500
+线性组合	xiàn xìng zǔ hé	500
+线性相关	xiàn xìng xiāng guān	500
+线性无关	xiàn xìng wú guān	500
+生成空间	shēng chéng kōng jiān	500
+生成集	shēng chéng jí	500
+基底	jī dǐ	500
+标准基	biāo zhǔn jī	500
+正交基	zhèng jiāo jī	500
+标准正交基	biāo zhǔn zhèng jiāo jī	500
+基变换	jī biàn huàn	500
+坐标变换	zuò biāo biàn huàn	500
+基向量	jī xiàng liàng	500
+对偶基	duì ǒu jī	500
+对偶空间	duì ǒu kōng jiān	500
+双对偶空间	shuāng duì ǒu kōng jiān	500
+线性映射	xiàn xìng yìng shè	500
+线性变换	xiàn xìng biàn huàn	500
+线性算子	xiàn xìng suàn zǐ	500
+线性泛函	xiàn xìng fàn hán	500
+线性方程组	xiàn xìng fāng chéng zǔ	500
+齐次方程组	qí cì fāng chéng zǔ	500
+非齐次方程组	fēi qí cì fāng chéng zǔ	500
+基础解系	jī chǔ jiě xì	500
+特解	tè jiě	500
+通解	tōng jiě	500
+解空间	jiě kōng jiān	500
+零空间	líng kōng jiān	500
+核空间	hé kōng jiān	500
+像空间	xiàng kōng jiān	500
+列空间	liè kōng jiān	500
+行空间	háng kōng jiān	500
+矩阵的秩	jǔ zhèn de zhì	500
+行秩	háng zhì	500
+列秩	liè zhì	500
+满秩	mǎn zhì	500
+秩亏	zhì kuī	500
+秩零化度定理	zhì líng huà dù dìng lǐ	500
+行列式	háng liè shì	500
+代数余子式	dài shù yú zǐ shì	500
+余子式	yú zǐ shì	500
+伴随矩阵	bàn suí jǔ zhèn	500
+逆矩阵	nì jǔ zhèn	500
+可逆矩阵	kě nì jǔ zhèn	500
+奇异矩阵	qí yì jǔ zhèn	500
+非奇异矩阵	fēi qí yì jǔ zhèn	500
+单位矩阵	dān wèi jǔ zhèn	500
+零矩阵	líng jǔ zhèn	500
+对角矩阵	duì jiǎo jǔ zhèn	500
+上三角矩阵	shàng sān jiǎo jǔ zhèn	500
+下三角矩阵	xià sān jiǎo jǔ zhèn	500
+对称矩阵	duì chèn jǔ zhèn	500
+反对称矩阵	fǎn duì chèn jǔ zhèn	500
+反厄米矩阵	fǎn è mǐ jǔ zhèn	500
+正交矩阵	zhèng jiāo jǔ zhèn	500
+正规矩阵	zhèng guī jǔ zhèn	500
+负定矩阵	fù dìng jǔ zhèn	500
+不定矩阵	bù dìng jǔ zhèn	500
+稀疏矩阵	xī shū jǔ zhèn	500
+带状矩阵	dài zhuàng jǔ zhèn	500
+块矩阵	kuài jǔ zhèn	500
+分块矩阵	fēn kuài jǔ zhèn	500
+块对角矩阵	kuài duì jiǎo jǔ zhèn	500
+幂等矩阵	mì děng jǔ zhèn	500
+幂零矩阵	mì líng jǔ zhèn	500
+矩阵指数	jǔ zhèn zhǐ shù	500
+矩阵对数	jǔ zhèn duì shù	500
+矩阵平方根	jǔ zhèn píng fāng gēn	500
+矩阵函数	jǔ zhèn hán shù	500
+矩阵迹	jǔ zhèn jì	500
+矩阵范数	jǔ zhèn fàn shù	500
+谱范数	pǔ fàn shù	500
+弗罗贝尼乌斯范数	fú luó bèi ní wū sī fàn shù	500
+特征值	tè zhēng zhí	500
+特征向量	tè zhēng xiàng liàng	500
+特征子空间	tè zhēng zǐ kōng jiān	500
+特征多项式	tè zhēng duō xiàng shì	500
+最小多项式	zuì xiǎo duō xiàng shì	500
+代数重数	dài shù chóng shù	500
+几何重数	jǐ hé chóng shù	500
+重根	chóng gēn	500
+重数	chóng shù	500
+特征分解	tè zhēng fēn jiě	500
+谱分解	pǔ fēn jiě	500
+谱定理	pǔ dìng lǐ	500
+相似矩阵	xiāng sì jǔ zhèn	500
+相似变换	xiāng sì biàn huàn	500
+合同变换	hé tóng biàn huàn	500
+对角化	duì jiǎo huà	500
+可对角化	kě duì jiǎo huà	500
+若尔当标准形	ruò ěr dāng biāo zhǔn xíng	500
+若尔当块	ruò ěr dāng kuài	500
+奇异值	qí yì zhí	500
+奇异值谱	qí yì zhí pǔ	500
+伪逆	wěi nì	500
+广义逆	guǎng yì nì	500
+低秩矩阵	dī zhì jǔ zhèn	500
+秩分解	zhì fēn jiě	500
+正交分解	zhèng jiāo fēn jiě	500
+三角分解	sān jiǎo fēn jiě	500
+舒尔分解	shū ěr fēn jiě	500
+极分解	jí fēn jiě	500
+外积	wài jī	500
+内积	nèi jī	500
+点积	diǎn jī	500
+叉积	chā jī	500
+张量积	zhāng liàng jī	500
+直和	zhí hé	500
+直积	zhí jī	500
+二次型	èr cì xíng	500
+正定二次型	zhèng dìng èr cì xíng	500
+惯性指数	guàn xìng zhǐ shù	500
+双线性型	shuāng xiàn xìng xíng	500
+双线性映射	shuāng xiàn xìng yìng shè	500
+多线性映射	duō xiàn xìng yìng shè	500
+张量分解	zhāng liàng fēn jiě	500
+张量秩	zhāng liàng zhì	500
+协变张量	xié biàn zhāng liàng	500
+逆变张量	nì biàn zhāng liàng	500
+混合张量	hùn hé zhāng liàng	500
+张量收缩	zhāng liàng shōu suō	500
+线性的	xiàn xìng de	500
+非线性的	fēi xiàn xìng de	500
+正定的	zhèng dìng de	500
+半正定的	bàn zhèng dìng de	500
+可逆的	kě nì de	500
+
+# [calculus] 微积分、极限与级数
+微积分	wēi jī fēn	1000
+可微	kě wēi	1000
+可导	kě dǎo	1000
+可积	kě jī	1000
+连续	lián xù	1000
+光滑	guāng huá	1000
+有界	yǒu jiè	1000
+无界	wú jiè	1000
+无解	wú jiě	1000
+收敛	shōu liǎn	1000
+发散	fā sàn	1000
+微分学	wēi fēn xué	500
+积分学	jī fēn xué	500
+极限	jí xiàn	1000
+数列极限	shù liè jí xiàn	500
+函数极限	hán shù jí xiàn	500
+左极限	zuǒ jí xiàn	500
+右极限	yòu jí xiàn	500
+单侧极限	dān cè jí xiàn	500
+无穷小	wú qióng xiǎo	500
+无穷大	wú qióng dà	500
+等价无穷小	děng jià wú qióng xiǎo	500
+高阶无穷小	gāo jiē wú qióng xiǎo	500
+低阶无穷小	dī jiē wú qióng xiǎo	500
+同阶无穷小	tóng jiē wú qióng xiǎo	500
+连续性	lián xù xìng	500
+一致连续	yí zhì lián xù	500
+绝对连续	jué duì lián xù	500
+连续函数	lián xù hán shù	500
+间断点	jiàn duàn diǎn	500
+可去间断点	kě qù jiàn duàn diǎn	500
+跳跃间断点	tiào yuè jiàn duàn diǎn	500
+单调函数	dān diào hán shù	500
+单调性	dān diào xìng	500
+有界函数	yǒu jiè hán shù	500
+导数	dǎo shù	1000
+倒数	dào shù	800
+微分	wēi fēn	1000
+偏导数	piān dǎo shù	1000
+全微分	quán wēi fēn	500
+方向导数	fāng xiàng dǎo shù	500
+高阶导数	gāo jiē dǎo shù	500
+高阶偏导数	gāo jiē piān dǎo shù	500
+混合偏导数	hùn hé piān dǎo shù	500
+复合函数求导	fù hé hán shù qiú dǎo	500
+链式法则	liàn shì fǎ zé	500
+隐函数	yǐn hán shù	500
+隐函数定理	yǐn hán shù dìng lǐ	500
+反函数	fǎn hán shù	500
+反函数定理	fǎn hán shù dìng lǐ	500
+泰勒公式	tài lè gōng shì	500
+泰勒展开	tài lè zhǎn kāi	500
+泰勒级数	tài lè jí shù	500
+麦克劳林级数	mài kè láo lín jí shù	500
+拉格朗日余项	lā gé lǎng rì yú xiàng	500
+皮亚诺余项	pí yà nuò yú xiàng	500
+中值定理	zhōng zhí dìng lǐ	500
+罗尔定理	luó ěr dìng lǐ	500
+拉格朗日中值定理	lā gé lǎng rì zhōng zhí dìng lǐ	500
+柯西中值定理	kē xī zhōng zhí dìng lǐ	500
+洛必达法则	luò bì dá fǎ zé	500
+极值	jí zhí	500
+极值点	jí zhí diǎn	500
+极大值	jí dà zhí	500
+极小值	jí xiǎo zhí	500
+驻点	zhù diǎn	500
+鞍点	ān diǎn	500
+凹函数	āo hán shù	500
+凸函数	tū hán shù	500
+凹凸性	āo tū xìng	500
+拐点	guǎi diǎn	500
+曲率	qū lǜ	500
+不定积分	bù dìng jī fēn	500
+定积分	dìng jī fēn	500
+广义积分	guǎng yì jī fēn	500
+反常积分	fǎn cháng jī fēn	500
+瑕积分	xiá jī fēn	500
+原函数	yuán hán shù	500
+分部积分	fēn bù jī fēn	500
+换元积分	huàn yuán jī fēn	500
+积分中值定理	jī fēn zhōng zhí dìng lǐ	500
+微积分基本定理	wēi jī fēn jī běn dìng lǐ	500
+牛顿莱布尼茨公式	niú dùn lái bù ní cí gōng shì	500
+重积分	chóng jī fēn	500
+二重积分	èr chóng jī fēn	500
+三重积分	sān chóng jī fēn	500
+累次积分	lěi cì jī fēn	500
+曲线积分	qū xiàn jī fēn	500
+曲面积分	qū miàn jī fēn	500
+第一类曲线积分	dì yī lèi qū xiàn jī fēn	500
+第二类曲线积分	dì èr lèi qū xiàn jī fēn	500
+第一类曲面积分	dì yī lèi qū miàn jī fēn	500
+第二类曲面积分	dì èr lèi qū miàn jī fēn	500
+格林公式	gé lín gōng shì	500
+高斯公式	gāo sī gōng shì	500
+斯托克斯公式	sī tuō kè sī gōng shì	500
+梯度	tī dù	500
+散度	sǎn dù	500
+旋度	xuán dù	500
+拉普拉斯算子	lā pǔ lā sī suàn zǐ	500
+雅可比矩阵	yǎ kě bǐ jǔ zhèn	500
+雅可比行列式	yǎ kě bǐ háng liè shì	500
+海森矩阵	hǎi sēn jǔ zhèn	500
+级数	jí shù	1000
+阶数	jiē shù	900
+数项级数	shù xiàng jí shù	500
+函数项级数	hán shù xiàng jí shù	500
+幂级数	mì jí shù	500
+傅里叶级数	fù lǐ yè jí shù	500
+正项级数	zhèng xiàng jí shù	500
+交错级数	jiāo cuò jí shù	500
+绝对收敛	jué duì shōu liǎn	500
+条件收敛	tiáo jiàn shōu liǎn	500
+一致收敛	yí zhì shōu liǎn	500
+逐点收敛	zhú diǎn shōu liǎn	500
+收敛半径	shōu liǎn bàn jìng	500
+收敛域	shōu liǎn yù	500
+收敛区间	shōu liǎn qū jiān	500
+收敛阶	shōu liǎn jiē	500
+收敛速度	shōu liǎn sù dù	500
+比较判别法	bǐ jiào pàn bié fǎ	500
+比值判别法	bǐ zhí pàn bié fǎ	500
+根值判别法	gēn zhí pàn bié fǎ	500
+积分判别法	jī fēn pàn bié fǎ	500
+连续的	lián xù de	500
+可微的	kě wēi de	500
+可积的	kě jī de	500
+可导的	kě dǎo de	500
+有界的	yǒu jiè de	500
+光滑的	guāng huá de	500
+凸的	tū de	500
+非凸的	fēi tū de	500
+
+# [analysis] 实分析、测度与泛函分析
+实分析	shí fēn xī	500
+复分析	fù fēn xī	500
+实变函数	shí biàn hán shù	500
+复变函数	fù biàn hán shù	500
+测度	cè dù	1000
+测度论	cè dù lùn	500
+测度空间	cè dù kōng jiān	500
+可测空间	kě cè kōng jiān	500
+可测集	kě cè jí	500
+可测函数	kě cè hán shù	500
+可测性	kě cè xìng	500
+可测	kě cè	1000
+勒贝格测度	lè bèi gé cè dù	500
+勒贝格积分	lè bèi gé jī fēn	500
+黎曼积分	lí màn jī fēn	500
+博雷尔集	bó léi ěr jí	500
+博雷尔测度	bó léi ěr cè dù	500
+博雷尔代数	bó léi ěr dài shù	500
+西格玛代数	xī gé mǎ dài shù	500
+生成代数	shēng chéng dài shù	500
+外测度	wài cè dù	500
+零测集	líng cè jí	500
+几乎处处	jī hū chù chù	500
+依测度收敛	yī cè dù shōu liǎn	500
+单调收敛定理	dān diào shōu liǎn dìng lǐ	500
+控制收敛定理	kòng zhì shōu liǎn dìng lǐ	500
+法图引理	fǎ tú yǐn lǐ	500
+富比尼定理	fù bǐ ní dìng lǐ	500
+托内利定理	tuō nèi lì dìng lǐ	500
+拉东尼科迪姆定理	lā dōng ní kē dí mǔ dìng lǐ	500
+有符号测度	yǒu fú hào cè dù	500
+复测度	fù cè dù	500
+乘积测度	chéng jī cè dù	500
+概率测度	gài lǜ cè dù	500
+泛函	fàn hán	1000
+泛函分析	fàn hán fēn xī	500
+赋范空间	fù fàn kōng jiān	500
+赋范线性空间	fù fàn xiàn xìng kōng jiān	500
+巴拿赫空间	bā ná hè kōng jiān	500
+希尔伯特空间	xī ěr bó tè kōng jiān	500
+内积空间	nèi jī kōng jiān	500
+完备空间	wán bèi kōng jiān	500
+完备性	wán bèi xìng	500
+巴拿赫不动点定理	bā ná hè bù dòng diǎn dìng lǐ	500
+有界线性算子	yǒu jiè xiàn xìng suàn zǐ	500
+无界算子	wú jiè suàn zǐ	500
+紧算子	jǐn suàn zǐ	500
+自伴算子	zì bàn suàn zǐ	500
+伴随算子	bàn suí suàn zǐ	500
+正规算子	zhèng guī suàn zǐ	500
+酉算子	yǒu suàn zǐ	500
+投影算子	tóu yǐng suàn zǐ	500
+算子范数	suàn zǐ fàn shù	500
+算子谱	suàn zǐ pǔ	500
+谱半径	pǔ bàn jìng	500
+点谱	diǎn pǔ	500
+连续谱	lián xù pǔ	500
+剩余谱	shèng yú pǔ	500
+弱收敛	ruò shōu liǎn	500
+强收敛	qiáng shōu liǎn	500
+弱拓扑	ruò tuò pū	500
+弱星拓扑	ruò xīng tuò pū	500
+弱星收敛	ruò xīng shōu liǎn	500
+一致有界原理	yí zhì yǒu jiè yuán lǐ	500
+开映射定理	kāi yìng shè dìng lǐ	500
+闭图像定理	bì tú xiàng dìng lǐ	500
+哈恩巴拿赫定理	hā ēn bā ná hè dìng lǐ	500
+里斯表示定理	lǐ sī biǎo shì dìng lǐ	500
+索伯列夫空间	suǒ bó liè fū kōng jiān	500
+弱导数	ruò dǎo shù	500
+弱解	ruò jiě	500
+强解	qiáng jiě	500
+经典解	jīng diǎn jiě	500
+分布导数	fēn bù dǎo shù	500
+广义函数	guǎng yì hán shù	500
+测试函数	cè shì hán shù	500
+支撑集	zhī chēng jí	500
+紧支撑	jǐn zhī chēng	500
+局部可积	jú bù kě jī	500
+绝对可积	jué duì kě jī	500
+平方可积	píng fāng kě jī	500
+稠密子集	chóu mì zǐ jí	500
+稠密性	chóu mì xìng	500
+闭线性包	bì xiàn xìng bāo	500
+紧嵌入	jǐn qiàn rù	500
+闭算子	bì suàn zǐ	500
+闭包算子	bì bāo suàn zǐ	500
+
+# [topology] 点集拓扑与代数拓扑
+拓扑	tuò pū	1000
+拓扑学	tuò pū xué	500
+点集拓扑	diǎn jí tuò pū	500
+代数拓扑	dài shù tuò pū	500
+拓扑空间	tuò pū kōng jiān	500
+拓扑结构	tuò pū jié gòu	500
+开集	kāi jí	500
+闭集	bì jí	500
+开闭集	kāi bì jí	500
+邻域	lín yù	500
+邻域系	lín yù xì	500
+邻域基	lín yù jī	500
+拓扑基	tuò pū jī	500
+拓扑子基	tuò pū zǐ jī	500
+内点	nèi diǎn	500
+外点	wài diǎn	500
+边界点	biān jiè diǎn	500
+聚点	jù diǎn	500
+孤立点	gū lì diǎn	500
+内部	nèi bù	500
+闭包	bì bāo	1000
+边界	biān jiè	500
+导集	dǎo jí	500
+子空间拓扑	zǐ kōng jiān tuò pū	500
+乘积拓扑	chéng jī tuò pū	500
+商拓扑	shāng tuò pū	500
+诱导拓扑	yòu dǎo tuò pū	500
+离散拓扑	lí sàn tuò pū	500
+平凡拓扑	píng fán tuò pū	500
+商空间	shāng kōng jiān	500
+积空间	jī kōng jiān	500
+连续映射	lián xù yìng shè	500
+开映射	kāi yìng shè	500
+闭映射	bì yìng shè	500
+同胚	tóng pēi	1000
+同胚映射	tóng pēi yìng shè	500
+同胚空间	tóng pēi kōng jiān	500
+拓扑同胚	tuò pū tóng pēi	500
+同伦	tóng lún	1000
+同伦映射	tóng lún yìng shè	500
+同伦等价	tóng lún děng jià	500
+同伦类型	tóng lún lèi xíng	500
+同伦群	tóng lún qún	500
+基本群	jī běn qún	500
+同调	tóng diào	1000
+同调群	tóng diào qún	500
+上同调	shàng tóng diào	500
+上同调群	shàng tóng diào qún	500
+奇异同调	qí yì tóng diào	500
+单纯同调	dān chún tóng diào	500
+同调代数	tóng diào dài shù	500
+链复形	liàn fù xíng	500
+上链复形	shàng liàn fù xíng	500
+边界算子	biān jiè suàn zǐ	500
+链映射	liàn yìng shè	500
+链同伦	liàn tóng lún	500
+正合列	zhèng hé liè	500
+短正合列	duǎn zhèng hé liè	500
+长正合列	cháng zhèng hé liè	500
+欧拉示性数	ōu lā shì xìng shù	500
+贝蒂数	bèi dì shù	500
+连通性	lián tōng xìng	500
+连通空间	lián tōng kōng jiān	500
+连通分支	lián tōng fēn zhī	500
+道路连通	dào lù lián tōng	500
+道路连通空间	dào lù lián tōng kōng jiān	500
+单连通	dān lián tōng	500
+单连通空间	dān lián tōng kōng jiān	500
+局部连通	jú bù lián tōng	500
+局部道路连通	jú bù dào lù lián tōng	500
+紧致性	jǐn zhì xìng	500
+紧致	jǐn zhì	1000
+稠密	chóu mì	1000
+紧性	jǐn xìng	500
+紧空间	jǐn kōng jiān	500
+紧致空间	jǐn zhì kōng jiān	500
+局部紧致	jú bù jǐn zhì	500
+局部紧空间	jú bù jǐn kōng jiān	500
+序列紧致	xù liè jǐn zhì	500
+可分空间	kě fēn kōng jiān	500
+可数基	kě shǔ jī	500
+第一可数	dì yī kě shǔ	500
+第二可数	dì èr kě shǔ	500
+豪斯多夫空间	háo sī duō fū kōng jiān	500
+正规空间	zhèng guī kōng jiān	500
+正则空间	zhèng zé kōng jiān	500
+度量空间	dù liàng kōng jiān	500
+度量拓扑	dù liàng tuò pū	500
+完备度量空间	wán bèi dù liàng kōng jiān	500
+柯西序列	kē xī xù liè	500
+完备化	wán bèi huà	500
+覆盖空间	fù gài kōng jiān	500
+万有覆盖	wàn yǒu fù gài	500
+覆盖映射	fù gài yìng shè	500
+提升映射	tí shēng yìng shè	500
+形变收缩	xíng biàn shōu suō	500
+收缩映射	shōu suō yìng shè	500
+可缩空间	kě suō kōng jiān	500
+不动点	bù dòng diǎn	500
+不动点定理	bù dòng diǎn dìng lǐ	500
+布劳威尔不动点定理	bù láo wēi ěr bù dòng diǎn dìng lǐ	500
+单纯复形	dān chún fù xíng	500
+单纯形	dān chún xíng	500
+胞腔	bāo qiāng	500
+胞腔复形	bāo qiāng fù xíng	500
+基本多边形	jī běn duō biān xíng	500
+粘合空间	nián hé kōng jiān	500
+道路空间	dào lù kōng jiān	500
+环路空间	huán lù kōng jiān	500
+悬挂空间	xuán guà kōng jiān	500
+纤维化	xiān wéi huà	500
+
+# [geometry] 微分几何、流形与李理论
+几何	jǐ hé	1000
+几何学	jǐ hé xué	500
+微分几何	wēi fēn jǐ hé	500
+微分拓扑	wēi fēn tuò pū	500
+代数几何	dài shù jǐ hé	500
+仿射几何	fǎng shè jǐ hé	500
+射影几何	shè yǐng jǐ hé	500
+双曲几何	shuāng qū jǐ hé	500
+椭圆几何	tuǒ yuán jǐ hé	500
+共形几何	gòng xíng jǐ hé	500
+辛几何	xīn jǐ hé	500
+复几何	fù jǐ hé	500
+曲线论	qū xiàn lùn	500
+曲面论	qū miàn lùn	500
+流形	liú xíng	1000
+拓扑流形	tuò pū liú xíng	500
+可微流形	kě wēi liú xíng	500
+光滑流形	guāng huá liú xíng	500
+黎曼流形	lí màn liú xíng	500
+辛流形	xīn liú xíng	500
+泊松流形	pō sōng liú xíng	500
+复流形	fù liú xíng	500
+凯勒流形	kǎi lè liú xíng	500
+带边流形	dài biān liú xíng	500
+紧流形	jǐn liú xíng	500
+局部坐标	jú bù zuò biāo	500
+坐标卡	zuò biāo kǎ	500
+坐标图册	zuò biāo tú cè	500
+坐标邻域	zuò biāo lín yù	500
+过渡映射	guò dù yìng shè	500
+坐标变换公式	zuò biāo biàn huàn gōng shì	500
+微分结构	wēi fēn jié gòu	500
+微分同胚	wēi fēn tóng pēi	500
+微分同胚群	wēi fēn tóng pēi qún	500
+切向量	qiē xiàng liàng	500
+余切向量	yú qiē xiàng liàng	500
+切空间	qiē kōng jiān	500
+余切空间	yú qiē kōng jiān	500
+切丛	qiē cóng	500
+余切丛	yú qiē cóng	500
+向量丛	xiàng liàng cóng	500
+纤维丛	xiān wéi cóng	500
+主丛	zhǔ cóng	500
+平凡丛	píng fán cóng	500
+底空间	dǐ kōng jiān	500
+总空间	zǒng kōng jiān	500
+典型纤维	diǎn xíng xiān wéi	500
+结构群	jié gòu qún	500
+截面	jié miàn	500
+局部截面	jú bù jié miàn	500
+联络	lián luò	500
+仿射联络	fǎng shè lián luò	500
+协变导数	xié biàn dǎo shù	500
+外导数	wài dǎo shù	500
+外微分	wài wēi fēn	500
+微分形式	wēi fēn xíng shì	500
+外代数	wài dài shù	500
+楔积	xiē jī	500
+张量场	zhāng liàng chǎng	500
+向量场	xiàng liàng chǎng	500
+标量场	biāo liàng chǎng	500
+切映射	qiē yìng shè	500
+推前	tuī qián	500
+拉回	lā huí	500
+拉回映射	lā huí yìng shè	500
+浸入	jìn rù	500
+嵌入	qiàn rù	500
+浸没	jìn mò	500
+子流形	zǐ liú xíng	500
+嵌入流形	qiàn rù liú xíng	500
+正则值	zhèng zé zhí	500
+临界值	lín jiè zhí	500
+临界点	lín jiè diǎn	500
+正则点	zhèng zé diǎn	500
+李群	lǐ qún	1000
+李代数	lǐ dài shù	500
+李括号	lǐ kuò hào	500
+李导数	lǐ dǎo shù	500
+李子群	lǐ zǐ qún	500
+李群同态	lǐ qún tóng tài	500
+指数映射	zhǐ shù yìng shè	500
+伴随表示	bàn suí biǎo shì	500
+无穷小生成元	wú qióng xiǎo shēng chéng yuán	500
+单参数子群	dān cān shù zǐ qún	500
+黎曼度量	lí màn dù liàng	500
+度量张量	dù liàng zhāng liàng	500
+测地线	cè dì xiàn	500
+测地流	cè dì liú	500
+平行移动	píng xíng yí dòng	500
+平行传输	píng xíng chuán shū	500
+黎曼曲率	lí màn qū lǜ	500
+曲率张量	qū lǜ zhāng liàng	500
+里奇曲率	lǐ qí qū lǜ	500
+标量曲率	biāo liàng qū lǜ	500
+截面曲率	jié miàn qū lǜ	500
+高斯曲率	gāo sī qū lǜ	500
+平均曲率	píng jūn qū lǜ	500
+主曲率	zhǔ qū lǜ	500
+基本形式	jī běn xíng shì	500
+第一基本形式	dì yī jī běn xíng shì	500
+第二基本形式	dì èr jī běn xíng shì	500
+体积形式	tǐ jī xíng shì	500
+定向	dìng xiàng	500
+可定向流形	kě dìng xiàng liú xíng	500
+不可定向流形	bù kě dìng xiàng liú xíng	500
+非定向流形	fēi dìng xiàng liú xíng	500
+莫比乌斯带	mò bǐ wū sī dài	500
+克莱因瓶	kè lái yīn píng	500
+测地完备	cè dì wán bèi	500
+度量完备	dù liàng wán bèi	500
+霍奇分解	huò qí fēn jiě	500
+德拉姆上同调	dé lā mǔ shàng tóng diào	500
+陈类	chén lèi	500
+欧拉类	ōu lā lèi	500
+示性类	shì xìng lèi	500
+
+# [algebra_number_theory] 抽象代数与数论
+抽象代数	chōu xiàng dài shù	500
+近世代数	jìn shì dài shù	500
+群论	qún lùn	500
+环论	huán lùn	500
+域论	yù lùn	500
+模论	mó lùn	500
+数论	shù lùn	500
+初等数论	chū děng shù lùn	500
+代数数论	dài shù shù lùn	500
+解析数论	jiě xī shù lùn	500
+自然数	zì rán shù	500
+整数	zhěng shù	500
+有理数	yǒu lǐ shù	500
+无理数	wú lǐ shù	500
+实数	shí shù	500
+复数	fù shù	1000
+虚数	xū shù	500
+纯虚数	chún xū shù	500
+正数	zhèng shù	500
+负数	fù shù	900
+有理数域	yǒu lǐ shù yù	500
+实数域	shí shù yù	500
+复数域	fù shù yù	500
+有限域	yǒu xiàn yù	500
+整数环	zhěng shù huán	500
+多项式环	duō xiàng shì huán	500
+整环	zhěng huán	500
+交换环	jiāo huàn huán	500
+含幺环	hán yāo huán	500
+主理想整环	zhǔ lǐ xiǎng zhěng huán	500
+唯一分解整环	wéi yī fēn jiě zhěng huán	500
+欧几里得整环	ōu jǐ lǐ dé zhěng huán	500
+诺特环	nuò tè huán	500
+阿廷环	ā tíng huán	500
+局部环	jú bù huán	500
+理想	lǐ xiǎng	500
+主理想	zhǔ lǐ xiǎng	500
+素理想	sù lǐ xiǎng	500
+极大理想	jí dà lǐ xiǎng	500
+零因子	líng yīn zǐ	500
+单位元	dān wèi yuán	500
+幺元	yāo yuán	500
+逆元	nì yuán	500
+可逆元	kě nì yuán	500
+群作用	qún zuò yòng	500
+群表示	qún biǎo shì	500
+线性表示	xiàn xìng biǎo shì	500
+不可约表示	bù kě yuē biǎo shì	500
+特征标	tè zhēng biāo	500
+群同态	qún tóng tài	500
+环同态	huán tóng tài	500
+域同态	yù tóng tài	500
+模同态	mó tóng tài	500
+同构	tóng gòu	1000
+同态	tóng tài	1000
+自同构	zì tóng gòu	500
+内自同构	nèi zì tóng gòu	500
+自同构群	zì tóng gòu qún	500
+商群	shāng qún	500
+商环	shāng huán	500
+商模	shāng mó	500
+正规子群	zhèng guī zǐ qún	500
+子群	zǐ qún	500
+陪集	péi jí	500
+群的阶	qún de jiē	500
+循环群	xún huán qún	500
+有限群	yǒu xiàn qún	500
+无限群	wú xiàn qún	500
+置换群	zhì huàn qún	500
+对称群	duì chèn qún	500
+交错群	jiāo cuò qún	500
+阿贝尔群	ā bèi ěr qún	500
+交换群	jiāo huàn qún	500
+自由群	zì yóu qún	500
+直积群	zhí jī qún	500
+半直积	bàn zhí jī	500
+单群	dān qún	500
+可解群	kě jiě qún	500
+幂零群	mì líng qún	500
+自由模	zì yóu mó	500
+投射模	tóu shè mó	500
+内射模	nèi shè mó	500
+张量代数	zhāng liàng dài shù	500
+交换代数	jiāo huàn dài shù	500
+整除	zhěng chú	500
+素数	sù shù	500
+质数	zhì shù	500
+合数	hé shù	500
+互素	hù sù	500
+互质	hù zhì	500
+最大公约数	zuì dà gōng yuē shù	500
+最小公倍数	zuì xiǎo gōng bèi shù	500
+算术基本定理	suàn shù jī běn dìng lǐ	500
+同余	tóng yú	500
+同余类	tóng yú lèi	500
+同余关系	tóng yú guān xì	500
+同余方程	tóng yú fāng chéng	500
+模运算	mó yùn suàn	500
+取模	qǔ mó	500
+模数	mó shù	500
+欧拉函数	ōu lā hán shù	500
+欧拉定理	ōu lā dìng lǐ	500
+费马小定理	fèi mǎ xiǎo dìng lǐ	500
+中国剩余定理	zhōng guó shèng yú dìng lǐ	500
+贝祖等式	bèi zǔ děng shì	500
+二次剩余	èr cì shèng yú	500
+原根	yuán gēn	500
+丢番图方程	diū fān tú fāng chéng	500
+代数数	dài shù shù	500
+超越数	chāo yuè shù	500
+代数整数	dài shù zhěng shù	500
+域扩张	yù kuò zhāng	500
+代数扩张	dài shù kuò zhāng	500
+超越扩张	chāo yuè kuò zhāng	500
+有限扩张	yǒu xiàn kuò zhāng	500
+分裂域	fēn liè yù	500
+代数闭包	dài shù bì bāo	500
+代数闭域	dài shù bì yù	500
+实闭域	shí bì yù	500
+伽罗瓦群	gā luó wǎ qún	500
+伽罗瓦理论	gā luó wǎ lǐ lùn	500
+范畴	fàn chóu	500
+范畴论	fàn chóu lùn	500
+函子	hán zǐ	500
+自然变换	zì rán biàn huàn	500
+交换图	jiāo huàn tú	500
+泛性质	fàn xìng zhì	500
+始对象	shǐ duì xiàng	500
+终对象	zhōng duì xiàng	500
+
+# [complex_analysis] 复分析与复函数
+复平面	fù píng miàn	500
+复变量	fù biàn liàng	500
+复函数	fù hán shù	500
+实部	shí bù	500
+虚部	xū bù	500
+模长	mó cháng	500
+辐角	fú jiǎo	500
+主辐角	zhǔ fú jiǎo	500
+共轭复数	gòng è fù shù	500
+复共轭	fù gòng è	500
+解析函数	jiě xī hán shù	500
+全纯函数	quán chún hán shù	500
+亚纯函数	yà chún hán shù	500
+整函数	zhěng hán shù	500
+解析性	jiě xī xìng	500
+解析延拓	jiě xī yán tuò	500
+零点	líng diǎn	500
+极点	jí diǎn	500
+奇点	qí diǎn	500
+孤立奇点	gū lì qí diǎn	500
+可去奇点	kě qù qí diǎn	500
+本性奇点	běn xìng qí diǎn	500
+留数	liú shù	500
+留数定理	liú shù dìng lǐ	500
+围道积分	wéi dào jī fēn	500
+柯西积分公式	kē xī jī fēn gōng shì	500
+柯西积分定理	kē xī jī fēn dìng lǐ	500
+柯西主值	kē xī zhǔ zhí	500
+柯西黎曼方程	kē xī lí màn fāng chéng	500
+洛朗级数	luò lǎng jí shù	500
+洛朗展开	luò lǎng zhǎn kāi	500
+泰勒定理	tài lè dìng lǐ	500
+最大模原理	zuì dà mó yuán lǐ	500
+辐角原理	fú jiǎo yuán lǐ	500
+刘维尔定理	liú wéi ěr dìng lǐ	500
+黎曼映射定理	lí màn yìng shè dìng lǐ	500
+黎曼球面	lí màn qiú miàn	500
+黎曼曲面	lí màn qū miàn	500
+保角映射	bǎo jiǎo yìng shè	500
+共形映射	gòng xíng yìng shè	500
+双全纯映射	shuāng quán chún yìng shè	500
+调和函数	tiáo hé hán shù	500
+共轭调和函数	gòng è tiáo hé hán shù	500
+欧拉公式	ōu lā gōng shì	500
+欧拉恒等式	ōu lā héng děng shì	500
+复对数	fù duì shù	500
+复指数	fù zhǐ shù	500
+多值函数	duō zhí hán shù	500
+单值函数	dān zhí hán shù	500
+分支点	fēn zhī diǎn	500
+支割线	zhī gē xiàn	500
+
+# [discrete_math] 组合数学、图论与计算理论
+组合数学	zǔ hé shù xué	500
+图论	tú lùn	500
+排列	pái liè	500
+组合	zǔ hé	500
+排列组合	pái liè zǔ hé	500
+阶乘	jiē chéng	500
+二项式系数	èr xiàng shì xì shù	500
+二项式定理	èr xiàng shì dìng lǐ	500
+多项式定理	duō xiàng shì dìng lǐ	500
+生成函数	shēng chéng hán shù	500
+母函数	mǔ hán shù	500
+普通生成函数	pǔ tōng shēng chéng hán shù	500
+指数生成函数	zhǐ shù shēng chéng hán shù	500
+递推关系	dì tuī guān xì	500
+递推公式	dì tuī gōng shì	500
+递推方程	dì tuī fāng chéng	500
+容斥原理	róng chì yuán lǐ	500
+抽屉原理	chōu tì yuán lǐ	500
+鸽巢原理	gē cháo yuán lǐ	500
+卡特兰数	kǎ tè lán shù	500
+斐波那契数列	fěi bō nà qì shù liè	500
+斯特林数	sī tè lín shù	500
+贝尔数	bèi ěr shù	500
+有向图	yǒu xiàng tú	500
+无向图	wú xiàng tú	500
+简单图	jiǎn dān tú	500
+多重图	duō chóng tú	500
+加权图	jiā quán tú	500
+完全图	wán quán tú	500
+二部图	èr bù tú	500
+完全二部图	wán quán èr bù tú	500
+连通图	lián tōng tú	500
+有向无环图	yǒu xiàng wú huán tú	500
+图的度	tú de dù	500
+顶点	dǐng diǎn	500
+边集	biān jí	500
+顶点集	dǐng diǎn jí	500
+邻接矩阵	lín jiē jǔ zhèn	500
+关联矩阵	guān lián jǔ zhèn	500
+拉普拉斯矩阵	lā pǔ lā sī jǔ zhèn	500
+图拉普拉斯	tú lā pǔ lā sī	500
+路径	lù jìng	500
+回路	huí lù	500
+环路	huán lù	500
+生成树	shēng chéng shù	500
+最小生成树	zuì xiǎo shēng chéng shù	500
+最短路径	zuì duǎn lù jìng	500
+欧拉图	ōu lā tú	500
+哈密顿图	hā mì dùn tú	500
+平面图	píng miàn tú	500
+图着色	tú zhuó sè	500
+色数	sè shù	500
+图同构	tú tóng gòu	500
+图嵌入	tú qiàn rù	500
+匹配	pǐ pèi	500
+最大匹配	zuì dà pǐ pèi	500
+完美匹配	wán měi pǐ pèi	500
+网络流	wǎng luò liú	500
+最大流	zuì dà liú	500
+最小割	zuì xiǎo gē	500
+树宽	shù kuān	500
+图分解	tú fēn jiě	500
+组合优化	zǔ hé yōu huà	500
+可计算性	kě jì suàn xìng	500
+可判定性	kě pàn dìng xìng	500
+不可判定性	bù kě pàn dìng xìng	500
+图灵机	tú líng jī	500
+可计算函数	kě jì suàn hán shù	500
+算法复杂度	suàn fǎ fù zá dù	500
+时间复杂度	shí jiān fù zá dù	500
+空间复杂度	kōng jiān fù zá dù	500
+多项式时间	duō xiàng shì shí jiān	500
+指数时间	zhǐ shù shí jiān	500
+渐近复杂度	jiàn jìn fù zá dù	500
+
+# [numerical_mathematics] 数值计算与微分方程
+数值分析	shù zhí fēn xī	500
+数值计算	shù zhí jì suàn	500
+数值方法	shù zhí fāng fǎ	500
+浮点数	fú diǎn shù	500
+浮点运算	fú diǎn yùn suàn	500
+机器精度	jī qì jīng dù	500
+尾数	wěi shù	500
+有效数字	yǒu xiào shù zì	500
+舍入误差	shě rù wù chā	500
+截断误差	jié duàn wù chā	500
+离散误差	lí sàn wù chā	500
+误差界	wù chā jiè	500
+误差上界	wù chā shàng jiè	500
+前向误差	qián xiàng wù chā	500
+后向误差	hòu xiàng wù chā	500
+前向稳定性	qián xiàng wěn dìng xìng	500
+后向稳定性	hòu xiàng wěn dìng xìng	500
+数值稳定性	shù zhí wěn dìng xìng	500
+病态问题	bìng tài wèn tí	500
+良态问题	liáng tài wèn tí	500
+适定问题	shì dìng wèn tí	500
+不适定问题	bù shì dìng wèn tí	500
+数值积分	shù zhí jī fēn	500
+数值微分	shù zhí wēi fēn	500
+数值求解	shù zhí qiú jiě	500
+插值	chā zhí	500
+外推	wài tuī	500
+多项式插值	duō xiàng shì chā zhí	500
+拉格朗日插值	lā gé lǎng rì chā zhí	500
+牛顿插值	niú dùn chā zhí	500
+样条插值	yàng tiáo chā zhí	500
+三次样条	sān cì yàng tiáo	500
+分段插值	fēn duàn chā zhí	500
+插值节点	chā zhí jié diǎn	500
+差商	chā shāng	500
+均差	jūn chā	500
+差分法	chā fēn fǎ	500
+有限差分	yǒu xiàn chā fēn	500
+有限元	yǒu xiàn yuán	500
+有限元法	yǒu xiàn yuán fǎ	500
+有限元空间	yǒu xiàn yuán kōng jiān	500
+有限体积法	yǒu xiàn tǐ jī fǎ	500
+谱方法	pǔ fāng fǎ	500
+伽辽金方法	gā liáo jīn fāng fǎ	500
+离散化	lí sàn huà	500
+网格剖分	wǎng gé pōu fēn	500
+三角剖分	sān jiǎo pōu fēn	500
+自适应网格	zì shì yìng wǎng gé	500
+边界条件	biān jiè tiáo jiàn	500
+初始条件	chū shǐ tiáo jiàn	500
+初值问题	chū zhí wèn tí	500
+边值问题	biān zhí wèn tí	500
+柯西问题	kē xī wèn tí	500
+弱形式	ruò xíng shì	500
+变分形式	biàn fēn xíng shì	500
+数值通量	shù zhí tōng liàng	500
+稳定性条件	wěn dìng xìng tiáo jiàn	500
+相容性	xiāng róng xìng	500
+一致性	yí zhì xìng	500
+收敛性	shōu liǎn xìng	500
+误差估计	wù chā gū jì	500
+误差阶	wù chā jiē	500
+步长	bù cháng	500
+迭代次数	dié dài cì shù	500
+常微分方程	cháng wēi fēn fāng chéng	500
+偏微分方程	piān wēi fēn fāng chéng	500
+微分方程组	wēi fēn fāng chéng zǔ	500
+线性微分方程	xiàn xìng wēi fēn fāng chéng	500
+非线性微分方程	fēi xiàn xìng wēi fēn fāng chéng	500
+齐次微分方程	qí cì wēi fēn fāng chéng	500
+非齐次微分方程	fēi qí cì wēi fēn fāng chéng	500
+椭圆型方程	tuǒ yuán xíng fāng chéng	500
+抛物型方程	pāo wù xíng fāng chéng	500
+双曲型方程	shuāng qū xíng fāng chéng	500
+泊松方程	pō sōng fāng chéng	500
+拉普拉斯方程	lā pǔ lā sī fāng chéng	500
+热方程	rè fāng chéng	500
+波动方程	bō dòng fāng chéng	500
+对流方程	duì liú fāng chéng	500
+扩散方程	kuò sàn fāng chéng	500
+反应扩散方程	fǎn yìng kuò sàn fāng chéng	500
+特征线法	tè zhēng xiàn fǎ	500
+分离变量法	fēn lí biàn liàng fǎ	500
+格林函数	gé lín hán shù	500
+基本解	jī běn jiě	500
+本征值	běn zhēng zhí	500
+本征函数	běn zhēng hán shù	500
+自治系统	zì zhì xì tǒng	500
+非自治系统	fēi zì zhì xì tǒng	500
+动力系统	dòng lì xì tǒng	500
+动力学	dòng lì xué	500
+连续动力系统	lián xù dòng lì xì tǒng	500
+离散动力系统	lí sàn dòng lì xì tǒng	500
+平衡点	píng héng diǎn	500
+稳定平衡	wěn dìng píng héng	500
+渐近稳定	jiàn jìn wěn dìng	500
+指数稳定	zhǐ shù wěn dìng	500
+局部稳定	jú bù wěn dìng	500
+全局稳定	quán jú wěn dìng	500
+李雅普诺夫函数	lǐ yǎ pǔ nuò fū hán shù	500
+李雅普诺夫稳定性	lǐ yǎ pǔ nuò fū wěn dìng xìng	500
+不变集	bù biàn jí	500
+吸引子	xī yǐn zǐ	500
+周期轨道	zhōu qī guǐ dào	500
+极限环	jí xiàn huán	500
+分岔	fēn chà	500
+分岔图	fēn chà tú	500
+霍普夫分岔	huò pǔ fū fēn chà	500
+混沌	hùn dùn	500
+遍历理论	biàn lì lǐ lùn	500
+保测变换	bǎo cè biàn huàn	500
+不变测度	bù biàn cè dù	500
+
+# [academic_writing] 学术写作与研究表达
+学术论文	xué shù lùn wén	500
+学术写作	xué shù xiě zuò	500
+数学论文	shù xué lùn wén	500
+研究论文	yán jiū lùn wén	500
+论文摘要	lùn wén zhāi yào	500
+关键词	guān jiàn cí	500
+引言	yǐn yán	500
+结论	jié lùn	500
+附录	fù lù	500
+参考文献	cān kǎo wén xiàn	500
+补充材料	bǔ chōng cái liào	500
+符号说明	fú hào shuō míng	500
+符号约定	fú hào yuē dìng	500
+研究背景	yán jiū bèi jǐng	500
+研究现状	yán jiū xiàn zhuàng	500
+相关工作	xiāng guān gōng zuò	500
+研究问题	yán jiū wèn tí	500
+问题定义	wèn tí dìng yì	500
+问题描述	wèn tí miáo shù	500
+问题建模	wèn tí jiàn mó	500
+数学模型	shù xué mó xíng	500
+理论分析	lǐ lùn fēn xī	500
+理论推导	lǐ lùn tuī dǎo	500
+公式推导	gōng shì tuī dǎo	500
+定理证明	dìng lǐ zhèng míng	500
+引理证明	yǐn lǐ zhèng míng	500
+数值实验	shù zhí shí yàn	500
+仿真实验	fǎng zhēn shí yàn	500
+实验设置	shí yàn shè zhì	500
+实验结果	shí yàn jié guǒ	500
+结果分析	jié guǒ fēn xī	500
+对照实验	duì zhào shí yàn	500
+消融实验	xiāo róng shí yàn	500
+对比方法	duì bǐ fāng fǎ	500
+基准方法	jī zhǔn fāng fǎ	500
+基线方法	jī xiàn fāng fǎ	500
+性能评估	xìng néng píng gū	500
+评价指标	píng jià zhǐ biāo	500
+适用条件	shì yòng tiáo jiàn	500
+正则条件	zhèng zé tiáo jiàn	500
+边界情形	biān jiè qíng xíng	500
+特殊情形	tè shū qíng xíng	500
+一般情形	yì bān qíng xíng	500
+由定义可知	yóu dìng yì kě zhī	500
+由此可得	yóu cǐ kě de	500
+综上所述	zōng shàng suǒ shù	500

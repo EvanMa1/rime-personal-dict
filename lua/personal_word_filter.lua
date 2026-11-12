@@ -1,5 +1,25 @@
--- Personal word and phrase exclusions, configured in wanxiang.custom.yaml.
+-- Academic vocabulary priority and personal candidate exclusions.
 local filter = {}
+
+local plain_pinyin = {
+    ["ā"] = "a", ["á"] = "a", ["ǎ"] = "a", ["à"] = "a",
+    ["ō"] = "o", ["ó"] = "o", ["ǒ"] = "o", ["ò"] = "o",
+    ["ē"] = "e", ["é"] = "e", ["ě"] = "e", ["è"] = "e",
+    ["ī"] = "i", ["í"] = "i", ["ǐ"] = "i", ["ì"] = "i",
+    ["ū"] = "u", ["ú"] = "u", ["ǔ"] = "u", ["ù"] = "u",
+    ["ü"] = "v", ["ǖ"] = "v", ["ǘ"] = "v", ["ǚ"] = "v", ["ǜ"] = "v",
+    ["ń"] = "n", ["ň"] = "n", ["ǹ"] = "n", ["ḿ"] = "m",
+}
+
+local function add_academic_word(index, code, word)
+    local entry = index[code]
+    if not entry then
+        entry = {words = {}, count = 0}
+        index[code] = entry
+    end
+    if not entry.words[word] then entry.count = entry.count + 1 end
+    entry.words[word] = true
+end
 
 local function clean(text)
     return text:gsub("^\239\187\191", ""):match("^%s*(.-)%s*$")
@@ -31,7 +51,27 @@ function filter.init(env)
     env.rules = {}
     env.decisions = {}
     env.decision_count = 0
+    env.academic_index = {}
     local config = env.engine.schema.config
+    local dictionaries = config:get_list("personal_word_filter/academic_dictionaries")
+    if dictionaries then
+        for i = 0, dictionaries.size - 1 do
+            local filename = dictionaries:get_value_at(i)
+            if filename then
+                read_lines(filename.value, function(line)
+                    local word, code = line:match("^([^\t]+)\t([^\t]+)\t%d+$")
+                    if not word or utf8.len(word) < 2 then return end
+                    code = code:gsub(utf8.charpattern, plain_pinyin):gsub("%s+", "")
+                    if code:find("[^a-z]") then return end
+                    add_academic_word(env.academic_index, code, word)
+                    local alternate = code:gsub("([nl])ve", "%1ue")
+                    if alternate ~= code then
+                        add_academic_word(env.academic_index, alternate, word)
+                    end
+                end)
+            end
+        end
+    end
     local words = config:get_list("personal_word_filter/blocked_words")
     if words then
         for i = 0, words.size - 1 do
@@ -105,10 +145,67 @@ local function is_blocked(text, env)
     return blocked
 end
 
+local function academic_matches(env)
+    local context = env.engine.context
+    if context.composition:empty() or context:get_option("ascii_mode") then return end
+    local segment = context.composition:back()
+    if not segment:has_tag("abc") then return end
+    local code = context.input:sub(segment.start + 1, segment._end)
+    if code:find("[^a-z' ]") then return end
+    code = code:gsub("[' ]", "")
+    return env.academic_index[code], segment.start, segment._end
+end
+
 function filter.func(input, env)
-    for candidate in input:iter() do
-        if not is_blocked(candidate.text, env) then yield(candidate) end
+    local matches, start_pos, end_pos = academic_matches(env)
+    if not matches then
+        for candidate in input:iter() do
+            if not is_blocked(candidate.text, env) then yield(candidate) end
+        end
+        return
     end
+
+    local fixed, academic, ordinary = {}, {}, {}
+    local found = {}
+    local remaining = matches.count
+    local inspected = 0
+    local flushed = false
+    local function flush()
+        -- Preserve native order within each group, including learned preferences.
+        for _, candidate in ipairs(fixed) do yield(candidate) end
+        for _, candidate in ipairs(academic) do yield(candidate) end
+        for _, candidate in ipairs(ordinary) do yield(candidate) end
+        fixed, academic, ordinary = nil, nil, nil
+        flushed = true
+    end
+
+    for candidate in input:iter() do
+        inspected = inspected + 1
+        if not is_blocked(candidate.text, env) then
+            if flushed then
+                yield(candidate)
+            else
+                local text = candidate.text
+                if env.to_simplified then text = env.to_simplified:convert(text) or text end
+                local is_academic = matches.words[text]
+                    and candidate.start == start_pos and candidate._end == end_pos
+                if is_academic and not found[text] then
+                    found[text] = true
+                    remaining = remaining - 1
+                end
+                if candidate.type == "user_table" then
+                    table.insert(fixed, candidate)
+                elseif is_academic then
+                    table.insert(academic, candidate)
+                else
+                    table.insert(ordinary, candidate)
+                end
+            end
+        end
+        -- Bound look-ahead; stop as soon as all exact academic matches are found.
+        if not flushed and (remaining == 0 or inspected >= 128) then flush() end
+    end
+    if not flushed then flush() end
 end
 
 function filter.fini(env)
@@ -116,6 +213,7 @@ function filter.fini(env)
     env.rules = nil
     env.decisions = nil
     env.to_simplified = nil
+    env.academic_index = nil
 end
 
 return filter
